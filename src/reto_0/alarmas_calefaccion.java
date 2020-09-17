@@ -7,6 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.JLabel;
 
 public class alarmas_calefaccion {
@@ -70,7 +72,7 @@ public class alarmas_calefaccion {
 		panel_piso1.add(btn_subir_p1);
 		btn_subir_p1.setIcon(new ImageIcon("../reto_0/imagenes/flecha_arriba.png")); 
 
-		//asd
+		//Flechas
 		
 		JButton btn_bajar_p1 = new JButton("New button");
 		btn_bajar_p1.setBounds(0, 172, 50, 85);
@@ -78,7 +80,18 @@ public class alarmas_calefaccion {
 		btn_bajar_p1.setIcon(new ImageIcon("../reto_0/imagenes/flecha_abajo.png"));
 		
 		JButton btn_llamada_de_emergencia = new JButton("Llamada de emergencia");
-		btn_llamada_de_emergencia.setBounds(20, 457, 164, 50);
+		btn_llamada_de_emergencia.setBounds(20, 457, 172, 50);
 		panel_piso1.add(btn_llamada_de_emergencia);
+		
+		//Piso 0 colocación
+		
+		JLabel Piso0 = new JLabel("");
+		Piso0.setBounds(127, 34, 479, 374);
+		panel_piso1.add(Piso0);
+		Image img = new ImageIcon(("../reto_0/imagenes/Planta0.png")).getImage();
+	   	Image newimg = img.getScaledInstance(600, 370,  java.awt.Image.SCALE_SMOOTH);
+	   	ImageIcon plano0 = new ImageIcon(newimg);
+	   	Piso0.setIcon(plano0);
+
 	}
 }

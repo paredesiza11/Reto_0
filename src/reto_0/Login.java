@@ -6,10 +6,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Toolkit;
+import java.util.ArrayList;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Login extends JFrame {
 
@@ -20,6 +25,10 @@ public class Login extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtUsuario;
 	private JTextField txtContrasena;
+	private ArrayList<String> usuarios=new ArrayList<String>();
+	private ArrayList<String> contraseina= new ArrayList<String>();
+	private String user;
+	private String contra;
 
 	/**
 	 * Launch the application.
@@ -70,7 +79,43 @@ public class Login extends JFrame {
 		txtContrasena.setBounds(202, 109, 131, 19);
 		contentPane.add(txtContrasena);
 		
+		usuarios.add("profesor");
+		usuarios.add("seguridad");
+		usuarios.add("conserje");
+		usuarios.add("director");
+		contraseina.add("1234");
+		contraseina.add("1234");
+		contraseina.add("1234");
+		contraseina.add("1234");
+		
 		JButton btnAcceder = new JButton("Acceder");
+		btnAcceder.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				user=txtUsuario.getText();
+				contra=txtContrasena.getText();
+				for(int i=0;i<usuarios.size();i++) {
+					if(user==usuarios.get(i)&&contra==contraseina.get(i)) {
+					switch (user) {
+						case "profesor": {
+								
+						}
+						case "seguridad": {
+									
+						}
+						case "conserje":{
+									
+						}
+						case "director":{
+									
+						}
+						}
+					}
+					else {
+						JOptionPane.showMessageDialog( null, "Error", "Usuario o Contraseña Incorrecta", JOptionPane.ERROR_MESSAGE);
+						}
+				}
+			}
+		});
 		btnAcceder.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnAcceder.setBounds(143, 163, 125, 35);
 		contentPane.add(btnAcceder);
