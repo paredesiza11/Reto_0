@@ -70,7 +70,7 @@ public class alarmas_calefaccion {
 		panel_piso1.add(btn_subir_p1);
 		btn_subir_p1.setIcon(new ImageIcon("../reto_0/imagenes/flecha_arriba.png")); 
 
-		
+		//asd
 		
 		JButton btn_bajar_p1 = new JButton("New button");
 		btn_bajar_p1.setBounds(0, 172, 50, 85);
