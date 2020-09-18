@@ -72,7 +72,6 @@ public class alarmas_calefaccion {
 		panel_piso1.add(btn_subir_p1);
 		btn_subir_p1.setIcon(new ImageIcon("../reto_0/imagenes/flecha_arriba.png")); 
 
-		//Flechas
 		
 		JButton btn_bajar_p1 = new JButton("New button");
 		btn_bajar_p1.setBounds(0, 172, 50, 85);
@@ -83,6 +82,7 @@ public class alarmas_calefaccion {
 		btn_llamada_de_emergencia.setBounds(20, 457, 172, 50);
 		panel_piso1.add(btn_llamada_de_emergencia);
 		
+
 		//Piso 0 colocación
 		
 		JLabel Piso0 = new JLabel("");
@@ -92,6 +92,14 @@ public class alarmas_calefaccion {
 	   	Image newimg = img.getScaledInstance(600, 370,  java.awt.Image.SCALE_SMOOTH);
 	   	ImageIcon plano0 = new ImageIcon(newimg);
 	   	Piso0.setIcon(plano0);
+
+
+		JLabel lbl_plano_piso_0 = new JLabel("New label");
+		lbl_plano_piso_0.setBounds(70, 10, 690, 369);
+		panel_piso1.add(lbl_plano_piso_0);
+		lbl_plano_piso_0.setIcon(plano0);
+		
+		
 
 	}
 }
