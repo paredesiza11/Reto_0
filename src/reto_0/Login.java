@@ -15,6 +15,7 @@ import java.awt.Toolkit;
 import java.util.ArrayList;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JPasswordField;
 
 public class Login extends JFrame {
 
@@ -24,11 +25,11 @@ public class Login extends JFrame {
 	private static final long serialVersionUID = -8802095397294448337L;
 	private JPanel contentPane;
 	private JTextField txtUsuario;
-	private JTextField txtContrasena;
-	private ArrayList<String> usuarios=new ArrayList<String>();
-	private ArrayList<String> contraseina= new ArrayList<String>();
+	private String usuario="admin";
+	private String contraseña="admin";
 	private String user;
 	private String contra;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -70,54 +71,30 @@ public class Login extends JFrame {
 		contentPane.add(lblContrasena);
 		
 		txtUsuario = new JTextField();
-		txtUsuario.setBounds(202, 79, 131, 19);
+		txtUsuario.setBounds(194, 79, 139, 19);
 		contentPane.add(txtUsuario);
 		txtUsuario.setColumns(10);
 		
-		txtContrasena = new JTextField();
-		txtContrasena.setColumns(10);
-		txtContrasena.setBounds(202, 109, 131, 19);
-		contentPane.add(txtContrasena);
-		
-		usuarios.add("profesor");
-		usuarios.add("seguridad");
-		usuarios.add("conserje");
-		usuarios.add("director");
-		contraseina.add("1234");
-		contraseina.add("1234");
-		contraseina.add("1234");
-		contraseina.add("1234");
 		
 		JButton btnAcceder = new JButton("Acceder");
 		btnAcceder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				user=txtUsuario.getText();
-				contra=txtContrasena.getText();
-				for(int i=0;i<usuarios.size();i++) {
-					if(user==usuarios.get(i)&&contra==contraseina.get(i)) {
-					switch (user) {
-						case "profesor": {
-								
-						}
-						case "seguridad": {
-									
-						}
-						case "conserje":{
-									
-						}
-						case "director":{
-									
-						}
-						}
+				contra=new String(passwordField.getPassword());
+					if(user.equals(contraseña)&&contraseña.equals(contra)) {
+						System.out.println("hola");
 					}
 					else {
-						JOptionPane.showMessageDialog( null, "Error", "Usuario o Contraseña Incorrecta", JOptionPane.ERROR_MESSAGE);
-						}
-				}
+						System.out.println("adivinas");
+					}
 			}
 		});
 		btnAcceder.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		btnAcceder.setBounds(143, 163, 125, 35);
 		contentPane.add(btnAcceder);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(194, 110, 139, 19);
+		contentPane.add(passwordField);
 	}
 }
