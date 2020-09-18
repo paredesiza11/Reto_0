@@ -10,8 +10,11 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.Image;
 import java.util.ArrayList;
+import java.util.Random;
 
 import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class principal {
 
@@ -115,6 +118,11 @@ public class principal {
 		panel_piso1.add(btn_alarmas);
 				
 		btn_calefaccion = new JButton("Calefacci\u00F3n");
+		btn_calefaccion.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				panel_alarmas.setVisible(false);
+			}
+		});
 		btn_calefaccion.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btn_calefaccion.setBounds(616, 461, 116, 62);
 		panel_piso1.add(btn_calefaccion);
@@ -131,7 +139,7 @@ public class principal {
 		btn_subir_p1.setIcon(new ImageIcon("../reto_0/imagenes/flecha_arriba.png")); 
 		
 		panel_alarmas = new JPanel();
-		panel_alarmas.setBounds(60, 0, 710, 397);
+		panel_alarmas.setBounds(60, 0, 710, 431);
 		panel_piso1.add(panel_alarmas);
 		
 		btn_llamada_de_emergencia = new JButton("Llamada de emergencia");
@@ -141,116 +149,110 @@ public class principal {
 
 		
 		lbl_plano_piso_0 = new JLabel("New label");
+		panel_alarmas.setLayout(null);
 
-		lbl_cl_025 = new JLabel("9595959");
-		lbl_cl_025.setBounds(308, 196, 50, 50);
+		lbl_cl_025 = new JLabel("");
+		lbl_cl_025.setBounds(191, 197, 39, 13);
 		panel_alarmas.add(lbl_cl_025);
 		
-		lbl_cl_023 = new JLabel("9595959");
-		lbl_cl_023.setBounds(280, 262, 25, 25);
+		lbl_cl_023 = new JLabel("");
+		lbl_cl_023.setBounds(191, 250, 39, 13);
 		panel_alarmas.add(lbl_cl_023);
 		
 	   	
-	   	lbl_cl_024 = new JLabel("9595959");
-	   	lbl_cl_024.setBounds(238, 262, 25, 25);
+	   	lbl_cl_024 = new JLabel("");
+	   	lbl_cl_024.setBounds(142, 250, 39, 13);
 	   	panel_alarmas.add(lbl_cl_024);
 	   			
-	   	lbl_cl_022 = new JLabel("9595959");
-	   	lbl_cl_022.setBounds(308, 244, 25, 25);
+	   	lbl_cl_022 = new JLabel("");
+	   	lbl_cl_022.setBounds(234, 250, 39, 13);
 	   	panel_alarmas.add(lbl_cl_022);
 	   			
-	   	lbl_cl_021 = new JLabel("9595959");
-	   	lbl_cl_021.setBounds(345, 262, 25, 25);
+	   	lbl_cl_021 = new JLabel("");
+	   	lbl_cl_021.setBounds(283, 250, 39, 13);
 	   	panel_alarmas.add(lbl_cl_021);
 	   			
-	   	lbl_cl_020 = new JLabel("9595959");
-	   	lbl_cl_020.setBounds(390, 262, 25, 25);
+	   	lbl_cl_020 = new JLabel("");
+	   	lbl_cl_020.setBounds(340, 250, 39, 13);
 	   	panel_alarmas.add(lbl_cl_020);
 	   					
-	   	lbl_cl_019 = new JLabel("9595959");
-	   	lbl_cl_019.setBounds(432, 196, 25, 25);
+	   	lbl_cl_019 = new JLabel("");
+	   	lbl_cl_019.setBounds(379, 197, 39, 13);
 	   	panel_alarmas.add(lbl_cl_019);
 	   					
-	   	lbl_cl_007 = new JLabel("9595959");
-	   	lbl_cl_007.setBounds(496, 172, 25, 25);
+	   	lbl_cl_007 = new JLabel("");
+	   	lbl_cl_007.setBounds(423, 159, 39, 13);
 	   	panel_alarmas.add(lbl_cl_007);
 	   							
-	   	lbl_cl_009 = new JLabel("9595959");
-	   	lbl_cl_009.setBounds(496, 144, 25, 25);
+	   	lbl_cl_009 = new JLabel("");
+	   	lbl_cl_009.setBounds(423, 136, 39, 13);
 	   	panel_alarmas.add(lbl_cl_009);
 	   							
-	   	lbl_cl_011 = new JLabel("9595959");
-	   	lbl_cl_011.setBounds(496, 121, 25, 25);
+	   	lbl_cl_011 = new JLabel("");
+	   	lbl_cl_011.setBounds(423, 113, 39, 13);
 	   	panel_alarmas.add(lbl_cl_011);
 	   							
-	   	lbl_cl_012 = new JLabel("9595959");
-	   	lbl_cl_012.setBounds(496, 99, 25, 25);
+	   	lbl_cl_012 = new JLabel("");
+	   	lbl_cl_012.setBounds(423, 90, 39, 13);
 	   	panel_alarmas.add(lbl_cl_012);
 	   							
-	   	lbl_cl_014 = new JLabel("9595959");
-	   	lbl_cl_014.setBounds(496, 63, 25, 25);
+	   	lbl_cl_014 = new JLabel("");
+	   	lbl_cl_014.setBounds(423, 67, 39, 13);
 	   	panel_alarmas.add(lbl_cl_014);
 	   							
-	   	lbl_cl_016 = new JLabel("9595959");
-	   	lbl_cl_016.setBounds(496, 46, 25, 25);
+	   	lbl_cl_016 = new JLabel("");
+	   	lbl_cl_016.setBounds(423, 44, 39, 13);
 	   	panel_alarmas.add(lbl_cl_016);
 	   									
-	   	lbl_cl_017 = new JLabel("9595959");
-	   	lbl_cl_017.setBounds(536, 46, 25, 25);
+	   	lbl_cl_017 = new JLabel("");
+	   	lbl_cl_017.setBounds(501, 28, 39, 13);
 	   	panel_alarmas.add(lbl_cl_017);
 	   									
-	   	lbl_cl_015 = new JLabel("9595959");
-	   	lbl_cl_015.setBounds(572, 46, 25, 25);
+	   	lbl_cl_015 = new JLabel("");
+	   	lbl_cl_015.setBounds(561, 46, 39, 13);
 	   	panel_alarmas.add(lbl_cl_015);
 	   	
-	   	lbl_cl_026 = new JLabel("67868768686");
-	   	lbl_cl_026.setBounds(203, 244, 50, 50);
+	   	lbl_cl_026 = new JLabel("");
+	   	lbl_cl_026.setBounds(92, 210, 62, 13);
 	   	panel_alarmas.add(lbl_cl_026);
 	   	label.add(lbl_cl_026);
 	   											
-	   	lbl_cl_013 = new JLabel("9595959");
-	   	lbl_cl_013.setBounds(572, 82, 25, 25);
+	   	lbl_cl_013 = new JLabel("");
+	   	lbl_cl_013.setBounds(561, 67, 39, 13);
 	   	panel_alarmas.add(lbl_cl_013);
 	   	
 	   											
-	   	lbl_cl_010 = new JLabel("9595959");
-	   	lbl_cl_010.setBounds(572, 109, 25, 25);
+	   	lbl_cl_010 = new JLabel("");
+	   	lbl_cl_010.setBounds(561, 90, 39, 13);
 	   	panel_alarmas.add(lbl_cl_010);
 	   													
-	   	lbl_cl_008 = new JLabel("9595959");
-	   	lbl_cl_008.setBounds(572, 144, 25, 25);
+	   	lbl_cl_008 = new JLabel("");
+	   	lbl_cl_008.setBounds(561, 147, 39, 13);
 	   	panel_alarmas.add(lbl_cl_008);
 	   													
-	   	lbl_cl_006 = new JLabel("9595959");
-	   	lbl_cl_006.setBounds(572, 172, 25, 25);
+	   	lbl_cl_006 = new JLabel("");
+	   	lbl_cl_006.setBounds(561, 170, 39, 13);
 	   	panel_alarmas.add(lbl_cl_006);
 	   															
-	   	lbl_cl_001 = new JLabel("9595959");
-	   	lbl_cl_001.setBounds(529, 381, 25, 25);
+	   	lbl_cl_001 = new JLabel("");
+	   	lbl_cl_001.setBounds(423, 387, 39, 13);
 	   	panel_alarmas.add(lbl_cl_001);
 	   																	
-	   	lbl_cl_003 = new JLabel("9595959");
-	   	lbl_cl_003.setBounds(469, 349, 25, 25);
+	   	lbl_cl_003 = new JLabel("");
+	   	lbl_cl_003.setBounds(423, 334, 39, 13);
 	   	panel_alarmas.add(lbl_cl_003);
 	   																	
-	   	lbl_cl_002 = new JLabel("9595959");
-	   	lbl_cl_002.setBounds(572, 338, 25, 25);
+	   	lbl_cl_002 = new JLabel("");
+	   	lbl_cl_002.setBounds(561, 334, 39, 13);
 	   	panel_alarmas.add(lbl_cl_002);
 	   																			
-	   	lbl_cl_004 = new JLabel("9595959");
-	   	lbl_cl_004.setBounds(476, 301, 25, 25);
+	   	lbl_cl_004 = new JLabel("");
+	   	lbl_cl_004.setBounds(423, 313, 39, 13);
 	   	panel_alarmas.add(lbl_cl_004);
 	   																			
-	   	lbl_cl_005 = new JLabel("9595959");
-	   	lbl_cl_005.setBounds(575, 283, 25, 25);
+	   	lbl_cl_005 = new JLabel("");
+	   	lbl_cl_005.setBounds(561, 298, 39, 13);
 	   	panel_alarmas.add(lbl_cl_005);
-	   																			
-		//Piso 0 colocación
-	   																					
-	   	lbl_img_piso0 = new JLabel("9595959");
-	   	lbl_img_piso0.setBounds(127, 34, 479, 374);
-	   	panel_alarmas.add(lbl_img_piso0);
-	   	lbl_img_piso0.setIcon(plano0);
 	   	
 		label.add(lbl_cl_001);
 		label.add(lbl_cl_002);
@@ -277,9 +279,27 @@ public class principal {
 		label.add(lbl_cl_024);
 		label.add(lbl_cl_025);
 		
+		//Piso 0 colocación
+				
+	   	lbl_img_piso0 = new JLabel("");
+	   	lbl_img_piso0.setBounds(0, -80, 600, 600);
+	   	panel_alarmas.add(lbl_img_piso0);
+	   	lbl_img_piso0.setIcon(plano0);
+		Random r = new Random();
+		int result;
+		
 		for(int i=0;i<label.size();i++) {
-			 label.get(i).setIcon(luz_verde_escalada);
-		}
+			result = r.nextInt(100-1) + 1;
+			System.out.println(result);
+			if (result>15) {
+				label.get(i).setIcon(luz_verde_escalada);
 
+			}
+			
+		else {
+			 label.get(i).setIcon(luz_roja_escalada);
+
+		}
 	}
+}
 }
