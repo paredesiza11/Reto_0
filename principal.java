@@ -19,6 +19,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import javax.swing.SwingConstants;
 
 public class principal implements ActionListener, MouseListener{
 
@@ -38,7 +39,7 @@ public class principal implements ActionListener, MouseListener{
 	private JButton btn_bajar;
 	private JButton btn_llamada_de_emergencia;
 	private JLabel lbl_plano_piso_0;
-	
+	private JLabel lblAlarmaCalefaccion;
 	//botones de alarmas
 	
 	/*LABELS PISO 0*/
@@ -2136,6 +2137,12 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_alarmas_p2.add(lbl_img_piso2_c);
 	   	lbl_img_piso2_c.setIcon(plano2);
 	   	
+	   	lblAlarmaCalefaccion = new JLabel("ALARMAS");
+	   	lblAlarmaCalefaccion.setHorizontalAlignment(SwingConstants.CENTER);
+	   	lblAlarmaCalefaccion.setFont(new Font("Tahoma", Font.BOLD, 25));
+	   	lblAlarmaCalefaccion.setBounds(144, 441, 367, 70);
+	   	panel_piso.add(lblAlarmaCalefaccion);
+	   	
 }
 
 	@Override
@@ -2175,6 +2182,8 @@ public class principal implements ActionListener, MouseListener{
 	}
 	
 	private void mostrar_alarmas() {
+		lblAlarmaCalefaccion.setText("ALARMAS");
+
 		if(cont_piso==0) {
 			panel_alarmas_p0.setVisible(true);
 			panel_calefaccion_p0.setVisible(false);
@@ -2205,7 +2214,8 @@ public class principal implements ActionListener, MouseListener{
 	}
 	
 	private void mostrar_calefaccion() {
-		
+		lblAlarmaCalefaccion.setText("CALEFACCION");
+
 		if(cont_piso==0) {
 			panel_alarmas_p0.setVisible(false);
 			panel_calefaccion_p0.setVisible(true);
@@ -2239,5 +2249,4 @@ public class principal implements ActionListener, MouseListener{
 		// TODO Auto-generated method stub
 		lbl_piso.setText("Piso "+cont_piso);
 	}
-	
 }
