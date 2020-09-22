@@ -246,26 +246,13 @@ public class principal implements ActionListener, MouseListener{
 		
 		
 		//ARRAYLIST PISO 0
-		ArrayList<JLabel> label_p0_a = new ArrayList<JLabel>(); 
+		ArrayList<JLabel>arraylistalarmas=new ArrayList<JLabel>();
 		
-		ArrayList<JLabel> label_p0_c = new ArrayList<JLabel>(); 
+		ArrayList<JLabel>arraylistcalefaccion=new ArrayList<JLabel>();
 		
-		ArrayList<Boolean> estado_p0 = new ArrayList<Boolean>(); 
+		ArrayList<Boolean> estado=new ArrayList<Boolean>();
 		
-		//ARRAYLIST PISO 1
-		ArrayList<JLabel> label_p1_a = new ArrayList<JLabel>(); 
-				
-		ArrayList<JLabel> label_p1_c = new ArrayList<JLabel>(); 
-				
-		ArrayList<Boolean> estado_p1 = new ArrayList<Boolean>(); 
-		
-		//ARRAYLIST PISO 2
-		ArrayList<JLabel> label_p2_a = new ArrayList<JLabel>(); 
-				
-		ArrayList<JLabel> label_p2_c = new ArrayList<JLabel>(); 
-				
-		ArrayList<Boolean> estado_p2 = new ArrayList<Boolean>(); 
-
+	
 		
 		/*IMAGENES PISOS*/
 		Image img = new ImageIcon(("../reto_0/imagenes/Planta0.png")).getImage();
@@ -531,30 +518,31 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_005_a.setName("aula005");
 	   	panel_alarmas_p0.add(lbl_cl_005_a);
 	   	
-	   	label_p0_a.add(lbl_cl_001_a);
-	   	label_p0_a.add(lbl_cl_002_a);
-	   	label_p0_a.add(lbl_cl_003_a);
-	   	label_p0_a.add(lbl_cl_004_a);
-	   	label_p0_a.add(lbl_cl_005_a);
-	   	label_p0_a.add(lbl_cl_006_a);
-	   	label_p0_a.add(lbl_cl_007_a);
-	   	label_p0_a.add(lbl_cl_008_a);
-	   	label_p0_a.add(lbl_cl_009_a);
-	   	label_p0_a.add(lbl_cl_010_a);
-	   	label_p0_a.add(lbl_cl_011_a);
-	   	label_p0_a.add(lbl_cl_012_a);
-	   	label_p0_a.add(lbl_cl_013_a);
-	   	label_p0_a.add(lbl_cl_014_a);
-	   	label_p0_a.add(lbl_cl_015_a);
-	   	label_p0_a.add(lbl_cl_016_a);
-	   	label_p0_a.add(lbl_cl_017_a);
-	   	label_p0_a.add(lbl_cl_019_a);
-	   	label_p0_a.add(lbl_cl_020_a);
-	   	label_p0_a.add(lbl_cl_021_a);
-	   	label_p0_a.add(lbl_cl_022_a);
-	   	label_p0_a.add(lbl_cl_023_a);
-	   	label_p0_a.add(lbl_cl_024_a);
-	   	label_p0_a.add(lbl_cl_025_a);
+	   	
+	   	arraylistalarmas.add(lbl_cl_001_a);
+	   	arraylistalarmas.add(lbl_cl_002_a);
+	   	arraylistalarmas.add(lbl_cl_003_a);
+	   	arraylistalarmas.add(lbl_cl_004_a);
+	   	arraylistalarmas.add(lbl_cl_005_a);
+	   	arraylistalarmas.add(lbl_cl_006_a);
+	   	arraylistalarmas.add(lbl_cl_007_a);
+	   	arraylistalarmas.add(lbl_cl_008_a);
+	   	arraylistalarmas.add(lbl_cl_009_a);
+	   	arraylistalarmas.add(lbl_cl_010_a);
+	   	arraylistalarmas.add(lbl_cl_011_a);
+	   	arraylistalarmas.add(lbl_cl_012_a);
+	   	arraylistalarmas.add(lbl_cl_013_a);
+	   	arraylistalarmas.add(lbl_cl_014_a);
+	   	arraylistalarmas.add(lbl_cl_015_a);
+	   	arraylistalarmas.add(lbl_cl_016_a);
+	   	arraylistalarmas.add(lbl_cl_017_a);
+	   	arraylistalarmas.add(lbl_cl_019_a);
+	   	arraylistalarmas.add(lbl_cl_020_a);
+	   	arraylistalarmas.add(lbl_cl_021_a);
+	   	arraylistalarmas.add(lbl_cl_022_a);
+	   	arraylistalarmas.add(lbl_cl_023_a);
+	   	arraylistalarmas.add(lbl_cl_024_a);
+	   	arraylistalarmas.add(lbl_cl_025_a);
 		
 		/*CALEFACCION*/
 		
@@ -563,13 +551,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_025_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(23).booleanValue()) {
+				if(estado.get(23).booleanValue()) {
 					
-					label_p0_c.get(23).setIcon(termometro_vacio_escalado);
-					estado_p0.set(23,false);
+					arraylistcalefaccion.get(23).setIcon(termometro_vacio_escalado);
+					estado.set(23,false);
 				}else {
-					label_p0_c.get(23).setIcon(termometro_escalado);
-					estado_p0.set(23,true);
+					arraylistcalefaccion.get(23).setIcon(termometro_escalado);
+					estado.set(23,true);
 
 				}
 			}
@@ -582,13 +570,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_023_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(21).booleanValue()) {
+				if(estado.get(21).booleanValue()) {
 					
-					label_p0_c.get(21).setIcon(termometro_vacio_escalado);
-					estado_p0.set(21,false);
+					arraylistcalefaccion.get(21).setIcon(termometro_vacio_escalado);
+					estado.set(21,false);
 				}else {
-					label_p0_c.get(21).setIcon(termometro_escalado);
-					estado_p0.set(21,true);
+					arraylistcalefaccion.get(21).setIcon(termometro_escalado);
+					estado.set(21,true);
 
 				}
 			}
@@ -602,13 +590,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_024_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(22).booleanValue()) {
+				if(estado.get(22).booleanValue()) {
 					
-					label_p0_c.get(22).setIcon(termometro_vacio_escalado);
-					estado_p0.set(22,false);
+					arraylistcalefaccion.get(22).setIcon(termometro_vacio_escalado);
+					estado.set(22,false);
 				}else {
-					label_p0_c.get(22).setIcon(termometro_escalado);
-					estado_p0.set(22,true);
+					arraylistcalefaccion.get(22).setIcon(termometro_escalado);
+					estado.set(22,true);
 
 				}
 			}
@@ -621,13 +609,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_022_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(20).booleanValue()) {
+				if(estado.get(20).booleanValue()) {
 					
-					label_p0_c.get(20).setIcon(termometro_vacio_escalado);
-					estado_p0.set(20,false);
+					arraylistcalefaccion.get(20).setIcon(termometro_vacio_escalado);
+					estado.set(20,false);
 				}else {
-					label_p0_c.get(20).setIcon(termometro_escalado);
-					estado_p0.set(20,true);
+					arraylistcalefaccion.get(20).setIcon(termometro_escalado);
+					estado.set(20,true);
 
 				}
 			}
@@ -640,13 +628,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_021_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(19).booleanValue()) {
+				if(estado.get(19).booleanValue()) {
 					
-					label_p0_c.get(19).setIcon(termometro_vacio_escalado);
-					estado_p0.set(19,false);
+					arraylistcalefaccion.get(19).setIcon(termometro_vacio_escalado);
+					estado.set(19,false);
 				}else {
-					label_p0_c.get(19).setIcon(termometro_escalado);
-					estado_p0.set(19,true);
+					arraylistcalefaccion.get(19).setIcon(termometro_escalado);
+					estado.set(19,true);
 
 				}
 			}
@@ -659,13 +647,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_020_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(18).booleanValue()) {
+				if(estado.get(18).booleanValue()) {
 					
-					label_p0_c.get(18).setIcon(termometro_vacio_escalado);
-					estado_p0.set(18,false);
+					arraylistcalefaccion.get(18).setIcon(termometro_vacio_escalado);
+					estado.set(18,false);
 				}else {
-					label_p0_c.get(18).setIcon(termometro_escalado);
-					estado_p0.set(18,true);
+					arraylistcalefaccion.get(18).setIcon(termometro_escalado);
+					estado.set(18,true);
 
 				}
 			}
@@ -678,13 +666,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_019_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(17).booleanValue()) {
+				if(estado.get(17).booleanValue()) {
 					
-					label_p0_c.get(17).setIcon(termometro_vacio_escalado);
-					estado_p0.set(17,false);
+					arraylistcalefaccion.get(17).setIcon(termometro_vacio_escalado);
+					estado.set(17,false);
 				}else {
-					label_p0_c.get(17).setIcon(termometro_escalado);
-					estado_p0.set(17,true);
+					arraylistcalefaccion.get(17).setIcon(termometro_escalado);
+					estado.set(17,true);
 
 				}
 			}
@@ -697,13 +685,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_007_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(6).booleanValue()) {
+				if(estado.get(6).booleanValue()) {
 					
-					label_p0_c.get(6).setIcon(termometro_vacio_escalado);
-					estado_p0.set(6,false);
+					arraylistcalefaccion.get(6).setIcon(termometro_vacio_escalado);
+					estado.set(6,false);
 				}else {
-					label_p0_c.get(6).setIcon(termometro_escalado);
-					estado_p0.set(6,true);
+					arraylistcalefaccion.get(6).setIcon(termometro_escalado);
+					estado.set(6,true);
 
 				}
 			}
@@ -716,13 +704,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_009_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(8).booleanValue()) {
+				if(estado.get(8).booleanValue()) {
 					
-					label_p0_c.get(8).setIcon(termometro_vacio_escalado);
-					estado_p0.set(8,false);
+					arraylistcalefaccion.get(8).setIcon(termometro_vacio_escalado);
+					estado.set(8,false);
 				}else {
-					label_p0_c.get(8).setIcon(termometro_escalado);
-					estado_p0.set(8,true);
+					arraylistcalefaccion.get(8).setIcon(termometro_escalado);
+					estado.set(8,true);
 
 				}
 			}
@@ -735,13 +723,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_011_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(10).booleanValue()) {
+				if(estado.get(10).booleanValue()) {
 					
-					label_p0_c.get(10).setIcon(termometro_vacio_escalado);
-					estado_p0.set(10,false);
+					arraylistcalefaccion.get(10).setIcon(termometro_vacio_escalado);
+					estado.set(10,false);
 				}else {
-					label_p0_c.get(10).setIcon(termometro_escalado);
-					estado_p0.set(10,true);
+					arraylistcalefaccion.get(10).setIcon(termometro_escalado);
+					estado.set(10,true);
 
 				}
 			}
@@ -754,13 +742,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_012_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(11).booleanValue()) {
+				if(estado.get(11).booleanValue()) {
 					
-					label_p0_c.get(11).setIcon(termometro_vacio_escalado);
-					estado_p0.set(11,false);
+					arraylistcalefaccion.get(11).setIcon(termometro_vacio_escalado);
+					estado.set(11,false);
 				}else {
-					label_p0_c.get(11).setIcon(termometro_escalado);
-					estado_p0.set(11,true);
+					arraylistcalefaccion.get(11).setIcon(termometro_escalado);
+					estado.set(11,true);
 
 				}
 			}
@@ -773,13 +761,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_014_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(13).booleanValue()) {
+				if(estado.get(13).booleanValue()) {
 					
-					label_p0_c.get(13).setIcon(termometro_vacio_escalado);
-					estado_p0.set(13,false);
+					arraylistcalefaccion.get(13).setIcon(termometro_vacio_escalado);
+					estado.set(13,false);
 				}else {
-					label_p0_c.get(13).setIcon(termometro_escalado);
-					estado_p0.set(13,true);
+					arraylistcalefaccion.get(13).setIcon(termometro_escalado);
+					estado.set(13,true);
 
 				}
 			}
@@ -792,13 +780,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_016_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(15).booleanValue()) {
+				if(estado.get(15).booleanValue()) {
 					
-					label_p0_c.get(15).setIcon(termometro_vacio_escalado);
-					estado_p0.set(15,false);
+					arraylistcalefaccion.get(15).setIcon(termometro_vacio_escalado);
+					estado.set(15,false);
 				}else {
-					label_p0_c.get(15).setIcon(termometro_escalado);
-					estado_p0.set(15,true);
+					arraylistcalefaccion.get(15).setIcon(termometro_escalado);
+					estado.set(15,true);
 
 				}
 			}
@@ -811,13 +799,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_017_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(16).booleanValue()) {
+				if(estado.get(16).booleanValue()) {
 					
-					label_p0_c.get(16).setIcon(termometro_vacio_escalado);
-					estado_p0.set(16,false);
+					arraylistcalefaccion.get(16).setIcon(termometro_vacio_escalado);
+					estado.set(16,false);
 				}else {
-					label_p0_c.get(16).setIcon(termometro_escalado);
-					estado_p0.set(16,true);
+					arraylistcalefaccion.get(16).setIcon(termometro_escalado);
+					estado.set(16,true);
 
 				}
 			}
@@ -830,13 +818,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_015_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(14).booleanValue()) {
+				if(estado.get(14).booleanValue()) {
 					
-					label_p0_c.get(14).setIcon(termometro_vacio_escalado);
-					estado_p0.set(14,false);
+					arraylistcalefaccion.get(14).setIcon(termometro_vacio_escalado);
+					estado.set(14,false);
 				}else {
-					label_p0_c.get(14).setIcon(termometro_escalado);
-					estado_p0.set(14,true);
+					arraylistcalefaccion.get(14).setIcon(termometro_escalado);
+					estado.set(14,true);
 
 				}
 			}
@@ -849,13 +837,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_026_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(24).booleanValue()) {
+				if(estado.get(24).booleanValue()) {
 					
-					label_p0_c.get(24).setIcon(termometro_vacio_escalado);
-					estado_p0.set(24,false);
+					arraylistcalefaccion.get(24).setIcon(termometro_vacio_escalado);
+					estado.set(24,false);
 				}else {
-					label_p0_c.get(24).setIcon(termometro_escalado);
-					estado_p0.set(24,true);
+					arraylistcalefaccion.get(24).setIcon(termometro_escalado);
+					estado.set(24,true);
 
 				}
 			}
@@ -868,13 +856,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_013_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(12).booleanValue()) {
+				if(estado.get(12).booleanValue()) {
 					
-					label_p0_c.get(12).setIcon(termometro_vacio_escalado);
-					estado_p0.set(12,false);
+					arraylistcalefaccion.get(12).setIcon(termometro_vacio_escalado);
+					estado.set(12,false);
 				}else {
-					label_p0_c.get(12).setIcon(termometro_escalado);
-					estado_p0.set(12,true);
+					arraylistcalefaccion.get(12).setIcon(termometro_escalado);
+					estado.set(12,true);
 
 				}
 			}
@@ -888,13 +876,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_010_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(9).booleanValue()) {
+				if(estado.get(9).booleanValue()) {
 					
-					label_p0_c.get(9).setIcon(termometro_vacio_escalado);
-					estado_p0.set(9,false);
+					arraylistcalefaccion.get(9).setIcon(termometro_vacio_escalado);
+					estado.set(9,false);
 				}else {
-					label_p0_c.get(9).setIcon(termometro_escalado);
-					estado_p0.set(9,true);
+					arraylistcalefaccion.get(9).setIcon(termometro_escalado);
+					estado.set(9,true);
 
 				}
 			}
@@ -907,13 +895,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_008_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(7).booleanValue()) {
+				if(estado.get(7).booleanValue()) {
 					
-					label_p0_c.get(7).setIcon(termometro_vacio_escalado);
-					estado_p0.set(7,false);
+					arraylistcalefaccion.get(7).setIcon(termometro_vacio_escalado);
+					estado.set(7,false);
 				}else {
-					label_p0_c.get(7).setIcon(termometro_escalado);
-					estado_p0.set(7,true);
+					arraylistcalefaccion.get(7).setIcon(termometro_escalado);
+					estado.set(7,true);
 
 				}
 			}
@@ -926,13 +914,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_006_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(5).booleanValue()) {
+				if(estado.get(5).booleanValue()) {
 					
-					label_p0_c.get(5).setIcon(termometro_vacio_escalado);
-					estado_p0.set(5,false);
+					arraylistcalefaccion.get(5).setIcon(termometro_vacio_escalado);
+					estado.set(5,false);
 				}else {
-					label_p0_c.get(5).setIcon(termometro_escalado);
-					estado_p0.set(5,true);
+					arraylistcalefaccion.get(5).setIcon(termometro_escalado);
+					estado.set(5,true);
 
 				}
 			}
@@ -945,13 +933,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_001_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(0).booleanValue()) {
+				if(estado.get(0).booleanValue()) {
 					
-					label_p0_c.get(0).setIcon(termometro_vacio_escalado);
-					estado_p0.set(0,false);
+					arraylistcalefaccion.get(0).setIcon(termometro_vacio_escalado);
+					estado.set(0,false);
 				}else {
-					label_p0_c.get(0).setIcon(termometro_escalado);
-					estado_p0.set(0,true);
+					arraylistcalefaccion.get(0).setIcon(termometro_escalado);
+					estado.set(0,true);
 
 				}
 			}
@@ -964,13 +952,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_003_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(2).booleanValue()) {
+				if(estado.get(2).booleanValue()) {
 					
-					label_p0_c.get(2).setIcon(termometro_vacio_escalado);
-					estado_p0.set(2,false);
+					arraylistcalefaccion.get(2).setIcon(termometro_vacio_escalado);
+					estado.set(2,false);
 				}else {
-					label_p0_c.get(2).setIcon(termometro_escalado);
-					estado_p0.set(2,true);
+					arraylistcalefaccion.get(2).setIcon(termometro_escalado);
+					estado.set(2,true);
 
 				}
 			}
@@ -983,13 +971,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_002_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(1).booleanValue()) {
+				if(estado.get(1).booleanValue()) {
 					
-					label_p0_c.get(1).setIcon(termometro_vacio_escalado);
-					estado_p0.set(1,false);
+					arraylistcalefaccion.get(1).setIcon(termometro_vacio_escalado);
+					estado.set(1,false);
 				}else {
-					label_p0_c.get(1).setIcon(termometro_escalado);
-					estado_p0.set(1,true);
+					arraylistcalefaccion.get(1).setIcon(termometro_escalado);
+					estado.set(1,true);
 
 				}
 			}
@@ -1002,13 +990,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_004_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(3).booleanValue()) {
+				if(estado.get(3).booleanValue()) {
 					
-					label_p0_c.get(3).setIcon(termometro_vacio_escalado);
-					estado_p0.set(3,false);
+					arraylistcalefaccion.get(3).setIcon(termometro_vacio_escalado);
+					estado.set(3,false);
 				}else {
-					label_p0_c.get(3).setIcon(termometro_escalado);
-					estado_p0.set(3,true);
+					arraylistcalefaccion.get(3).setIcon(termometro_escalado);
+					estado.set(3,true);
 
 				}
 			}
@@ -1021,13 +1009,13 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_005_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p0.get(4).booleanValue()) {
+				if(estado.get(4).booleanValue()) {
 					
-					label_p0_c.get(4).setIcon(termometro_vacio_escalado);
-					estado_p0.set(4,false);
+					arraylistcalefaccion.get(4).setIcon(termometro_vacio_escalado);
+					estado.set(4,false);
 				}else {
-					label_p0_c.get(4).setIcon(termometro_escalado);
-					estado_p0.set(4,true);
+					arraylistcalefaccion.get(4).setIcon(termometro_escalado);
+					estado.set(4,true);
 
 				}
 			}
@@ -1035,31 +1023,31 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_005_c.setBounds(561, 298, 39, 25);
 	   	panel_calefaccion_p0.add(lbl_cl_005_c);
 	   	
-	   	label_p0_c.add(lbl_cl_001_c);
-	   	label_p0_c.add(lbl_cl_002_c);
-	   	label_p0_c.add(lbl_cl_003_c);
-	   	label_p0_c.add(lbl_cl_004_c);
-	   	label_p0_c.add(lbl_cl_005_c);
-	   	label_p0_c.add(lbl_cl_006_c);
-	   	label_p0_c.add(lbl_cl_007_c);
-	   	label_p0_c.add(lbl_cl_008_c);
-	   	label_p0_c.add(lbl_cl_009_c);
-	   	label_p0_c.add(lbl_cl_010_c);
-	   	label_p0_c.add(lbl_cl_011_c);
-	   	label_p0_c.add(lbl_cl_012_c);
-	   	label_p0_c.add(lbl_cl_013_c);
-	   	label_p0_c.add(lbl_cl_014_c);
-	   	label_p0_c.add(lbl_cl_015_c);
-	   	label_p0_c.add(lbl_cl_016_c);
-	   	label_p0_c.add(lbl_cl_017_c);
-	   	label_p0_c.add(lbl_cl_019_c);
-	   	label_p0_c.add(lbl_cl_020_c);
-	   	label_p0_c.add(lbl_cl_021_c);
-	   	label_p0_c.add(lbl_cl_022_c);
-	   	label_p0_c.add(lbl_cl_023_c);
-	   	label_p0_c.add(lbl_cl_024_c);
-	   	label_p0_c.add(lbl_cl_025_c);
-	   	label_p0_c.add(lbl_cl_026_c);
+	   	arraylistcalefaccion.add(lbl_cl_001_c);
+	   	arraylistcalefaccion.add(lbl_cl_002_c);
+	   	arraylistcalefaccion.add(lbl_cl_003_c);
+	   	arraylistcalefaccion.add(lbl_cl_004_c);
+	   	arraylistcalefaccion.add(lbl_cl_005_c);
+	   	arraylistcalefaccion.add(lbl_cl_006_c);
+	   	arraylistcalefaccion.add(lbl_cl_007_c);
+	   	arraylistcalefaccion.add(lbl_cl_008_c);
+	   	arraylistcalefaccion.add(lbl_cl_009_c);
+	   	arraylistcalefaccion.add(lbl_cl_010_c);
+	   	arraylistcalefaccion.add(lbl_cl_011_c);
+	   	arraylistcalefaccion.add(lbl_cl_012_c);
+	   	arraylistcalefaccion.add(lbl_cl_013_c);
+	   	arraylistcalefaccion.add(lbl_cl_014_c);
+	   	arraylistcalefaccion.add(lbl_cl_015_c);
+	   	arraylistcalefaccion.add(lbl_cl_016_c);
+	   	arraylistcalefaccion.add(lbl_cl_017_c);
+	   	arraylistcalefaccion.add(lbl_cl_019_c);
+	   	arraylistcalefaccion.add(lbl_cl_020_c);
+	   	arraylistcalefaccion.add(lbl_cl_021_c);
+	   	arraylistcalefaccion.add(lbl_cl_022_c);
+	   	arraylistcalefaccion.add(lbl_cl_023_c);
+	   	arraylistcalefaccion.add(lbl_cl_024_c);
+	   	arraylistcalefaccion.add(lbl_cl_025_c);
+	   	arraylistcalefaccion.add(lbl_cl_026_c);
 		
 				
 	   	
@@ -1072,31 +1060,28 @@ public class principal implements ActionListener, MouseListener{
 		int result;
 		
 		
-		for(int i=0;i<label_p0_c.size();i++) {
+		for(int i=0;i<arraylistcalefaccion.size();i++) {
 			result = r.nextInt(100-1) + 1;
 			if(result>30) {
-				estado_p0.add(true);
-				label_p0_c.get(i).setIcon(termometro_escalado);
+				estado.add(true);
+				arraylistcalefaccion.get(i).setIcon(termometro_escalado);
 			}else {
-				estado_p0.add(false);
-				label_p0_c.get(i).setIcon(termometro_vacio_escalado);
+				estado.add(false);
+				arraylistcalefaccion.get(i).setIcon(termometro_vacio_escalado);
 
 			}
 
 		}
-		for(int i=0;i<estado_p0.size();i++) {
-			System.out.println(estado_p0.get(i).toString());
-		}
 		
-		for(int i=0;i<label_p0_a.size();i++) {
+		for(int i=0;i<arraylistalarmas.size();i++) {
 			result = r.nextInt(100-1) + 1;
 			if (result>15) {
-				label_p0_a.get(i).setIcon(luz_verde_escalada);
+				arraylistalarmas.get(i).setIcon(luz_verde_escalada);
 
 			}
 			
 		else {
-			label_p0_a.get(i).setIcon(luz_roja_escalada);
+			arraylistalarmas.get(i).setIcon(luz_roja_escalada);
 
 		}
 	}
@@ -1207,26 +1192,26 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_104_a.setBounds(423, 313, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_104_a);
 	   	
-	   	label_p1_a.add(lbl_cl_101_a);
-	   	label_p1_a.add(lbl_cl_102_a);
-	   	label_p1_a.add(lbl_cl_103_a);
-	   	label_p1_a.add(lbl_cl_104_a);
-	   	label_p1_a.add(lbl_cl_105_a);
-	   	label_p1_a.add(lbl_cl_106_a);
-	   	label_p1_a.add(lbl_cl_107_a);
-	   	label_p1_a.add(lbl_cl_109_a);
-	   	label_p1_a.add(lbl_cl_108_a);
-	   	label_p1_a.add(lbl_cl_111_a);
-	   	label_p1_a.add(lbl_cl_110_a);
-	   	label_p1_a.add(lbl_cl_119_a);
-	   	label_p1_a.add(lbl_cl_112_a);
-	   	label_p1_a.add(lbl_cl_118_a);
-	   	label_p1_a.add(lbl_cl_113_a);
-	   	label_p1_a.add(lbl_cl_117_a);
-	   	label_p1_a.add(lbl_cl_114_a);
-	   	label_p1_a.add(lbl_cl_116_a);
-	   	label_p1_a.add(lbl_cl_115_a);
-	   	label_p1_a.add(lbl_cl_120_a);
+	   	arraylistalarmas.add(lbl_cl_101_a);
+	   	arraylistalarmas.add(lbl_cl_102_a);
+	   	arraylistalarmas.add(lbl_cl_103_a);
+	   	arraylistalarmas.add(lbl_cl_104_a);
+	   	arraylistalarmas.add(lbl_cl_105_a);
+	   	arraylistalarmas.add(lbl_cl_106_a);
+	   	arraylistalarmas.add(lbl_cl_107_a);
+	   	arraylistalarmas.add(lbl_cl_108_a);
+	   	arraylistalarmas.add(lbl_cl_109_a);
+	   	arraylistalarmas.add(lbl_cl_110_a);
+	   	arraylistalarmas.add(lbl_cl_111_a);
+	   	arraylistalarmas.add(lbl_cl_112_a);
+	   	arraylistalarmas.add(lbl_cl_113_a);
+	   	arraylistalarmas.add(lbl_cl_114_a);
+	   	arraylistalarmas.add(lbl_cl_115_a);
+	   	arraylistalarmas.add(lbl_cl_116_a);
+	   	arraylistalarmas.add(lbl_cl_117_a);
+	   	arraylistalarmas.add(lbl_cl_118_a);
+	   	arraylistalarmas.add(lbl_cl_119_a);
+	   	arraylistalarmas.add(lbl_cl_120_a);
 	   	
 	   	panel_alarmas_p1.setVisible(false);
 	   	panel_alarmas_p2.setVisible(false);
@@ -1241,13 +1226,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_101_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(0).booleanValue()) {
+				if(estado.get(25).booleanValue()) {
 					
-					label_p1_c.get(0).setIcon(termometro_vacio_escalado);
-					estado_p1.set(0,false);
+					arraylistcalefaccion.get(25).setIcon(termometro_vacio_escalado);
+					estado.set(25,false);
 				}else {
-					label_p1_c.get(0).setIcon(termometro_escalado);
-					estado_p1.set(0,true);
+					arraylistcalefaccion.get(25).setIcon(termometro_escalado);
+					estado.set(25,true);
 
 				}
 			}
@@ -1260,13 +1245,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_102_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(1).booleanValue()) {
+				if(estado.get(26).booleanValue()) {
 					
-					label_p1_c.get(1).setIcon(termometro_vacio_escalado);
-					estado_p1.set(1,false);
+					arraylistcalefaccion.get(26).setIcon(termometro_vacio_escalado);
+					estado.set(26,false);
 				}else {
-					label_p1_c.get(1).setIcon(termometro_escalado);
-					estado_p1.set(1,true);
+					arraylistcalefaccion.get(26).setIcon(termometro_escalado);
+					estado.set(26,true);
 
 				}
 			}
@@ -1279,13 +1264,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_103_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(2).booleanValue()) {
+				if(estado.get(27).booleanValue()) {
 					
-					label_p1_c.get(2).setIcon(termometro_vacio_escalado);
-					estado_p1.set(2,false);
+					arraylistcalefaccion.get(27).setIcon(termometro_vacio_escalado);
+					estado.set(27,false);
 				}else {
-					label_p1_c.get(2).setIcon(termometro_escalado);
-					estado_p1.set(2,true);
+					arraylistcalefaccion.get(27).setIcon(termometro_escalado);
+					estado.set(27,true);
 
 				}
 			}
@@ -1298,13 +1283,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_104_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(3).booleanValue()) {
+				if(estado.get(28).booleanValue()) {
 					
-					label_p1_c.get(3).setIcon(termometro_vacio_escalado);
-					estado_p1.set(3,false);
+					arraylistcalefaccion.get(28).setIcon(termometro_vacio_escalado);
+					estado.set(28,false);
 				}else {
-					label_p1_c.get(3).setIcon(termometro_escalado);
-					estado_p1.set(3,true);
+					arraylistcalefaccion.get(28).setIcon(termometro_escalado);
+					estado.set(28,true);
 
 				}
 			}
@@ -1317,13 +1302,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_105_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(4).booleanValue()) {
+				if(estado.get(29).booleanValue()) {
 					
-					label_p1_c.get(4).setIcon(termometro_vacio_escalado);
-					estado_p1.set(4,false);
+					arraylistcalefaccion.get(29).setIcon(termometro_vacio_escalado);
+					estado.set(29,false);
 				}else {
-					label_p1_c.get(4).setIcon(termometro_escalado);
-					estado_p1.set(4,true);
+					arraylistcalefaccion.get(29).setIcon(termometro_escalado);
+					estado.set(29,true);
 
 				}
 			}
@@ -1336,13 +1321,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_106_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(5).booleanValue()) {
+				if(estado.get(30).booleanValue()) {
 					
-					label_p1_c.get(5).setIcon(termometro_vacio_escalado);
-					estado_p1.set(5,false);
+					arraylistcalefaccion.get(30).setIcon(termometro_vacio_escalado);
+					estado.set(30,false);
 				}else {
-					label_p1_c.get(5).setIcon(termometro_escalado);
-					estado_p1.set(5,true);
+					arraylistcalefaccion.get(30).setIcon(termometro_escalado);
+					estado.set(30,true);
 
 				}
 			}
@@ -1355,13 +1340,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_107_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(6).booleanValue()) {
+				if(estado.get(31).booleanValue()) {
 					
-					label_p1_c.get(6).setIcon(termometro_vacio_escalado);
-					estado_p1.set(6,false);
+					arraylistcalefaccion.get(31).setIcon(termometro_vacio_escalado);
+					estado.set(31,false);
 				}else {
-					label_p1_c.get(6).setIcon(termometro_escalado);
-					estado_p1.set(6,true);
+					arraylistcalefaccion.get(31).setIcon(termometro_escalado);
+					estado.set(31,true);
 
 				}
 			}
@@ -1374,13 +1359,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_108_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(7).booleanValue()) {
+				if(estado.get(32).booleanValue()) {
 					
-					label_p1_c.get(7).setIcon(termometro_vacio_escalado);
-					estado_p1.set(7,false);
+					arraylistcalefaccion.get(32).setIcon(termometro_vacio_escalado);
+					estado.set(32,false);
 				}else {
-					label_p1_c.get(7).setIcon(termometro_escalado);
-					estado_p1.set(7,true);
+					arraylistcalefaccion.get(32).setIcon(termometro_escalado);
+					estado.set(32,true);
 
 				}
 			}
@@ -1393,13 +1378,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_109_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(8).booleanValue()) {
+				if(estado.get(33).booleanValue()) {
 					
-					label_p1_c.get(8).setIcon(termometro_vacio_escalado);
-					estado_p1.set(8,false);
+					arraylistcalefaccion.get(33).setIcon(termometro_vacio_escalado);
+					estado.set(33,false);
 				}else {
-					label_p1_c.get(8).setIcon(termometro_escalado);
-					estado_p1.set(8,true);
+					arraylistcalefaccion.get(33).setIcon(termometro_escalado);
+					estado.set(33,true);
 
 				}
 			}
@@ -1412,13 +1397,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_110_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(9).booleanValue()) {
+				if(estado.get(34).booleanValue()) {
 					
-					label_p1_c.get(9).setIcon(termometro_vacio_escalado);
-					estado_p1.set(9,false);
+					arraylistcalefaccion.get(34).setIcon(termometro_vacio_escalado);
+					estado.set(34,false);
 				}else {
-					label_p1_c.get(9).setIcon(termometro_escalado);
-					estado_p1.set(9,true);
+					arraylistcalefaccion.get(34).setIcon(termometro_escalado);
+					estado.set(34,true);
 
 				}
 			}
@@ -1431,13 +1416,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_111_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(10).booleanValue()) {
+				if(estado.get(35).booleanValue()) {
 					
-					label_p1_c.get(10).setIcon(termometro_vacio_escalado);
-					estado_p1.set(10,false);
+					arraylistcalefaccion.get(35).setIcon(termometro_vacio_escalado);
+					estado.set(35,false);
 				}else {
-					label_p1_c.get(10).setIcon(termometro_escalado);
-					estado_p1.set(10,true);
+					arraylistcalefaccion.get(35).setIcon(termometro_escalado);
+					estado.set(35,true);
 
 				}
 			}
@@ -1450,13 +1435,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_112_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(11).booleanValue()) {
+				if(estado.get(36).booleanValue()) {
 					
-					label_p1_c.get(11).setIcon(termometro_vacio_escalado);
-					estado_p1.set(11,false);
+					arraylistcalefaccion.get(36).setIcon(termometro_vacio_escalado);
+					estado.set(36,false);
 				}else {
-					label_p1_c.get(11).setIcon(termometro_escalado);
-					estado_p1.set(11,true);
+					arraylistcalefaccion.get(36).setIcon(termometro_escalado);
+					estado.set(36,true);
 
 				}
 			}
@@ -1469,13 +1454,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_113_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(12).booleanValue()) {
+				if(estado.get(37).booleanValue()) {
 					
-					label_p1_c.get(12).setIcon(termometro_vacio_escalado);
-					estado_p1.set(12,false);
+					arraylistcalefaccion.get(37).setIcon(termometro_vacio_escalado);
+					estado.set(37,false);
 				}else {
-					label_p1_c.get(12).setIcon(termometro_escalado);
-					estado_p1.set(12,true);
+					arraylistcalefaccion.get(37).setIcon(termometro_escalado);
+					estado.set(37,true);
 
 				}
 			}
@@ -1488,13 +1473,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_114_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(13).booleanValue()) {
+				if(estado.get(38).booleanValue()) {
 					
-					label_p1_c.get(13).setIcon(termometro_vacio_escalado);
-					estado_p1.set(13,false);
+					arraylistcalefaccion.get(38).setIcon(termometro_vacio_escalado);
+					estado.set(38,false);
 				}else {
-					label_p1_c.get(13).setIcon(termometro_escalado);
-					estado_p1.set(13,true);
+					arraylistcalefaccion.get(38).setIcon(termometro_escalado);
+					estado.set(38,true);
 
 				}
 			}
@@ -1507,13 +1492,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_115_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(14).booleanValue()) {
+				if(estado.get(39).booleanValue()) {
 					
-					label_p1_c.get(14).setIcon(termometro_vacio_escalado);
-					estado_p1.set(14,false);
+					arraylistcalefaccion.get(39).setIcon(termometro_vacio_escalado);
+					estado.set(39,false);
 				}else {
-					label_p1_c.get(14).setIcon(termometro_escalado);
-					estado_p1.set(14,true);
+					arraylistcalefaccion.get(39).setIcon(termometro_escalado);
+					estado.set(39,true);
 
 				}
 			}
@@ -1526,13 +1511,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_116_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(15).booleanValue()) {
+				if(estado.get(40).booleanValue()) {
 					
-					label_p1_c.get(15).setIcon(termometro_vacio_escalado);
-					estado_p1.set(15,false);
+					arraylistcalefaccion.get(40).setIcon(termometro_vacio_escalado);
+					estado.set(40,false);
 				}else {
-					label_p1_c.get(15).setIcon(termometro_escalado);
-					estado_p1.set(15,true);
+					arraylistcalefaccion.get(40).setIcon(termometro_escalado);
+					estado.set(40,true);
 
 				}
 			}
@@ -1545,13 +1530,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_117_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(16).booleanValue()) {
+				if(estado.get(41).booleanValue()) {
 					
-					label_p1_c.get(16).setIcon(termometro_vacio_escalado);
-					estado_p1.set(16,false);
+					arraylistcalefaccion.get(41).setIcon(termometro_vacio_escalado);
+					estado.set(41,false);
 				}else {
-					label_p1_c.get(16).setIcon(termometro_escalado);
-					estado_p1.set(16,true);
+					arraylistcalefaccion.get(41).setIcon(termometro_escalado);
+					estado.set(41,true);
 
 				}
 			}
@@ -1564,13 +1549,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_118_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(17).booleanValue()) {
+				if(estado.get(42).booleanValue()) {
 					
-					label_p1_c.get(17).setIcon(termometro_vacio_escalado);
-					estado_p1.set(17,false);
+					arraylistcalefaccion.get(42).setIcon(termometro_vacio_escalado);
+					estado.set(42,false);
 				}else {
-					label_p1_c.get(17).setIcon(termometro_escalado);
-					estado_p1.set(17,true);
+					arraylistcalefaccion.get(42).setIcon(termometro_escalado);
+					estado.set(42,true);
 
 				}
 			}
@@ -1583,13 +1568,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_119_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(18).booleanValue()) {
+				if(estado.get(43).booleanValue()) {
 					
-					label_p1_c.get(18).setIcon(termometro_vacio_escalado);
-					estado_p1.set(18,false);
+					arraylistcalefaccion.get(43).setIcon(termometro_vacio_escalado);
+					estado.set(43,false);
 				}else {
-					label_p1_c.get(18).setIcon(termometro_escalado);
-					estado_p1.set(18,true);
+					arraylistcalefaccion.get(43).setIcon(termometro_escalado);
+					estado.set(43,true);
 
 				}
 			}
@@ -1602,13 +1587,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_120_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p1.get(19).booleanValue()) {
+				if(estado.get(44).booleanValue()) {
 					
-					label_p1_c.get(19).setIcon(termometro_vacio_escalado);
-					estado_p1.set(19,false);
+					arraylistcalefaccion.get(44).setIcon(termometro_vacio_escalado);
+					estado.set(44,false);
 				}else {
-					label_p1_c.get(19).setIcon(termometro_escalado);
-					estado_p1.set(19,true);
+					arraylistcalefaccion.get(44).setIcon(termometro_escalado);
+					estado.set(44,true);
 
 				}
 			}
@@ -1616,53 +1601,53 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_120_c.setBounds(85, 270, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_120_c);
 	   	
-	   	label_p1_c.add(lbl_cl_101_c);
-	   	label_p1_c.add(lbl_cl_102_c);
-	   	label_p1_c.add(lbl_cl_103_c);
-	   	label_p1_c.add(lbl_cl_104_c);
-	   	label_p1_c.add(lbl_cl_105_c);
-	   	label_p1_c.add(lbl_cl_106_c);
-	   	label_p1_c.add(lbl_cl_107_c);
-	   	label_p1_c.add(lbl_cl_108_c);
-	   	label_p1_c.add(lbl_cl_109_c);
-	   	label_p1_c.add(lbl_cl_110_c);
-	   	label_p1_c.add(lbl_cl_111_c);
-	   	label_p1_c.add(lbl_cl_112_c);
-	   	label_p1_c.add(lbl_cl_113_c);
-	   	label_p1_c.add(lbl_cl_114_c);
-	   	label_p1_c.add(lbl_cl_115_c);
-	   	label_p1_c.add(lbl_cl_116_c);
-	   	label_p1_c.add(lbl_cl_117_c);
-	   	label_p1_c.add(lbl_cl_118_c);
-	   	label_p1_c.add(lbl_cl_119_c);
-	   	label_p1_c.add(lbl_cl_120_c);
+	   	arraylistcalefaccion.add(lbl_cl_101_c);
+	   	arraylistcalefaccion.add(lbl_cl_102_c);
+	   	arraylistcalefaccion.add(lbl_cl_103_c);
+	   	arraylistcalefaccion.add(lbl_cl_104_c);
+	   	arraylistcalefaccion.add(lbl_cl_105_c);
+	   	arraylistcalefaccion.add(lbl_cl_106_c);
+	   	arraylistcalefaccion.add(lbl_cl_107_c);
+	   	arraylistcalefaccion.add(lbl_cl_108_c);
+	   	arraylistcalefaccion.add(lbl_cl_109_c);
+	   	arraylistcalefaccion.add(lbl_cl_110_c);
+	   	arraylistcalefaccion.add(lbl_cl_111_c);
+	   	arraylistcalefaccion.add(lbl_cl_112_c);
+	   	arraylistcalefaccion.add(lbl_cl_113_c);
+	   	arraylistcalefaccion.add(lbl_cl_114_c);
+	   	arraylistcalefaccion.add(lbl_cl_115_c);
+	   	arraylistcalefaccion.add(lbl_cl_116_c);
+	   	arraylistcalefaccion.add(lbl_cl_117_c);
+	   	arraylistcalefaccion.add(lbl_cl_118_c);
+	   	arraylistcalefaccion.add(lbl_cl_119_c);
+	   	arraylistcalefaccion.add(lbl_cl_120_c);
 	   	
 	    
 	   	/*RANDOMIZADOR PISO 1*/
 		   
-		for(int i=0;i<label_p1_c.size()-1;i++) {
+		for(int i=25;i<45;i++) {
 			result = r.nextInt(100-1) + 1;
 			if(result>30) {
-				estado_p1.add(true);
-				label_p1_c.get(i).setIcon(termometro_escalado);
+				estado.add(true);
+				arraylistcalefaccion.get(i).setIcon(termometro_escalado);
 			}else {
-				estado_p1.add(false);
-				label_p1_c.get(i).setIcon(termometro_vacio_escalado);
+				estado.add(false);
+				arraylistcalefaccion.get(i).setIcon(termometro_vacio_escalado);
 
 			}
 
 		}
 		
 		
-		for(int i=0;i<label_p1_a.size();i++) {
+		for(int i=25;i<44;i++) {
 			result = r.nextInt(100-1) + 1;
 			if (result>15) {
-				label_p1_a.get(i).setIcon(luz_verde_escalada);
+				arraylistalarmas.get(i).setIcon(luz_verde_escalada);
 
 			}
 			
 		else {
-			label_p1_a.get(i).setIcon(luz_roja_escalada);
+			arraylistalarmas.get(i).setIcon(luz_roja_escalada);
 
 		}
 	}
@@ -1775,26 +1760,26 @@ public class principal implements ActionListener, MouseListener{
 	   	lbl_cl_204_a.setBounds(540, 350, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_204_a);
 	   	
-		label_p2_a.add(lbl_cl_201_a);
-		label_p2_a.add(lbl_cl_202_a);
-		label_p2_a.add(lbl_cl_203_a);
-		label_p2_a.add(lbl_cl_204_a);
-		label_p2_a.add(lbl_cl_205_a);
-		label_p2_a.add(lbl_cl_206_a);
-		label_p2_a.add(lbl_cl_207_a);
-		label_p2_a.add(lbl_cl_208_a);
-		label_p2_a.add(lbl_cl_209_a);
-		label_p2_a.add(lbl_cl_210_a);
-		label_p2_a.add(lbl_cl_211_a);
-		label_p2_a.add(lbl_cl_212_a);
-		label_p2_a.add(lbl_cl_213_a);
-		label_p2_a.add(lbl_cl_214_a);
-		label_p2_a.add(lbl_cl_215_a);
-		label_p2_a.add(lbl_cl_216_a);
-		label_p2_a.add(lbl_cl_217_a);
-		label_p2_a.add(lbl_cl_218_a);
-		label_p2_a.add(lbl_cl_219_a);
-		label_p2_a.add(lbl_cl_220_a);
+		arraylistalarmas.add(lbl_cl_201_a);
+		arraylistalarmas.add(lbl_cl_202_a);
+		arraylistalarmas.add(lbl_cl_203_a);
+		arraylistalarmas.add(lbl_cl_204_a);
+		arraylistalarmas.add(lbl_cl_205_a);
+		arraylistalarmas.add(lbl_cl_206_a);
+		arraylistalarmas.add(lbl_cl_207_a);
+		arraylistalarmas.add(lbl_cl_208_a);
+		arraylistalarmas.add(lbl_cl_209_a);
+		arraylistalarmas.add(lbl_cl_210_a);
+		arraylistalarmas.add(lbl_cl_211_a);
+		arraylistalarmas.add(lbl_cl_212_a);
+		arraylistalarmas.add(lbl_cl_213_a);
+		arraylistalarmas.add(lbl_cl_214_a);
+		arraylistalarmas.add(lbl_cl_215_a);
+		arraylistalarmas.add(lbl_cl_216_a);
+		arraylistalarmas.add(lbl_cl_217_a);
+		arraylistalarmas.add(lbl_cl_218_a);
+		arraylistalarmas.add(lbl_cl_219_a);
+		arraylistalarmas.add(lbl_cl_220_a);
 		
 		/*CALEFACCION*/
 		
@@ -1802,13 +1787,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_201_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(0).booleanValue()) {
+				if(estado.get(45).booleanValue()) {
 					
-					label_p2_c.get(0).setIcon(termometro_vacio_escalado);
-					estado_p2.set(0,false);
+					arraylistcalefaccion.get(45).setIcon(termometro_vacio_escalado);
+					estado.set(45,false);
 				}else {
-					label_p2_c.get(0).setIcon(termometro_escalado);
-					estado_p2.set(0,true);
+					arraylistcalefaccion.get(45).setIcon(termometro_escalado);
+					estado.set(45,true);
 
 				}
 			}
@@ -1820,13 +1805,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_202_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(1).booleanValue()) {
+				if(estado.get(46).booleanValue()) {
 					
-					label_p2_c.get(1).setIcon(termometro_vacio_escalado);
-					estado_p2.set(1,false);
+					arraylistcalefaccion.get(46).setIcon(termometro_vacio_escalado);
+					estado.set(46,false);
 				}else {
-					label_p2_c.get(1).setIcon(termometro_escalado);
-					estado_p2.set(1,true);
+					arraylistcalefaccion.get(46).setIcon(termometro_escalado);
+					estado.set(46,true);
 
 				}
 			}
@@ -1840,13 +1825,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_203_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(2).booleanValue()) {
+				if(estado.get(47).booleanValue()) {
 					
-					label_p2_c.get(2).setIcon(termometro_vacio_escalado);
-					estado_p2.set(2,false);
+					arraylistcalefaccion.get(47).setIcon(termometro_vacio_escalado);
+					estado.set(47,false);
 				}else {
-					label_p2_c.get(2).setIcon(termometro_escalado);
-					estado_p2.set(2,true);
+					arraylistcalefaccion.get(47).setIcon(termometro_escalado);
+					estado.set(47,true);
 
 				}
 			}
@@ -1859,13 +1844,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_204_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(3).booleanValue()) {
+				if(estado.get(48).booleanValue()) {
 					
-					label_p2_c.get(3).setIcon(termometro_vacio_escalado);
-					estado_p2.set(3,false);
+					arraylistcalefaccion.get(48).setIcon(termometro_vacio_escalado);
+					estado.set(48,false);
 				}else {
-					label_p2_c.get(3).setIcon(termometro_escalado);
-					estado_p2.set(3,true);
+					arraylistcalefaccion.get(48).setIcon(termometro_escalado);
+					estado.set(48,true);
 
 				}
 			}
@@ -1878,13 +1863,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_205_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(4).booleanValue()) {
+				if(estado.get(49).booleanValue()) {
 					
-					label_p2_c.get(4).setIcon(termometro_vacio_escalado);
-					estado_p2.set(4,false);
+					arraylistcalefaccion.get(49).setIcon(termometro_vacio_escalado);
+					estado.set(49,false);
 				}else {
-					label_p2_c.get(4).setIcon(termometro_escalado);
-					estado_p2.set(4,true);
+					arraylistcalefaccion.get(49).setIcon(termometro_escalado);
+					estado.set(49,true);
 
 				}
 			}
@@ -1897,13 +1882,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_206_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(5).booleanValue()) {
+				if(estado.get(50).booleanValue()) {
 					
-					label_p2_c.get(5).setIcon(termometro_vacio_escalado);
-					estado_p2.set(5,false);
+					arraylistcalefaccion.get(50).setIcon(termometro_vacio_escalado);
+					estado.set(50,false);
 				}else {
-					label_p2_c.get(5).setIcon(termometro_escalado);
-					estado_p2.set(5,true);
+					arraylistcalefaccion.get(50).setIcon(termometro_escalado);
+					estado.set(50,true);
 
 				}
 			}
@@ -1916,13 +1901,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_207_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(6).booleanValue()) {
+				if(estado.get(51).booleanValue()) {
 					
-					label_p2_c.get(6).setIcon(termometro_vacio_escalado);
-					estado_p2.set(6,false);
+					arraylistcalefaccion.get(51).setIcon(termometro_vacio_escalado);
+					estado.set(6,false);
 				}else {
-					label_p2_c.get(6).setIcon(termometro_escalado);
-					estado_p2.set(6,true);
+					arraylistcalefaccion.get(51).setIcon(termometro_escalado);
+					estado.set(51,true);
 
 				}
 			}
@@ -1935,13 +1920,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_208_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(7).booleanValue()) {
+				if(estado.get(52).booleanValue()) {
 					
-					label_p2_c.get(7).setIcon(termometro_vacio_escalado);
-					estado_p2.set(7,false);
+					arraylistcalefaccion.get(52).setIcon(termometro_vacio_escalado);
+					estado.set(52,false);
 				}else {
-					label_p2_c.get(7).setIcon(termometro_escalado);
-					estado_p2.set(7,true);
+					arraylistcalefaccion.get(52).setIcon(termometro_escalado);
+					estado.set(52,true);
 
 				}
 			}
@@ -1954,13 +1939,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_209_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(8).booleanValue()) {
+				if(estado.get(53).booleanValue()) {
 					
-					label_p2_c.get(8).setIcon(termometro_vacio_escalado);
-					estado_p2.set(8,false);
+					arraylistcalefaccion.get(53).setIcon(termometro_vacio_escalado);
+					estado.set(53,false);
 				}else {
-					label_p2_c.get(8).setIcon(termometro_escalado);
-					estado_p2.set(8,true);
+					arraylistcalefaccion.get(53).setIcon(termometro_escalado);
+					estado.set(53,true);
 
 				}
 			}
@@ -1973,13 +1958,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_210_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(9).booleanValue()) {
+				if(estado.get(54).booleanValue()) {
 					
-					label_p2_c.get(9).setIcon(termometro_vacio_escalado);
-					estado_p2.set(9,false);
+					arraylistcalefaccion.get(54).setIcon(termometro_vacio_escalado);
+					estado.set(54,false);
 				}else {
-					label_p2_c.get(9).setIcon(termometro_escalado);
-					estado_p2.set(9,true);
+					arraylistcalefaccion.get(54).setIcon(termometro_escalado);
+					estado.set(54,true);
 
 				}
 			}
@@ -1992,13 +1977,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_211_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(10).booleanValue()) {
+				if(estado.get(55).booleanValue()) {
 					
-					label_p2_c.get(10).setIcon(termometro_vacio_escalado);
-					estado_p2.set(10,false);
+					arraylistcalefaccion.get(55).setIcon(termometro_vacio_escalado);
+					estado.set(55,false);
 				}else {
-					label_p2_c.get(10).setIcon(termometro_escalado);
-					estado_p2.set(10,true);
+					arraylistcalefaccion.get(55).setIcon(termometro_escalado);
+					estado.set(55,true);
 
 				}
 			}
@@ -2011,13 +1996,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_212_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(11).booleanValue()) {
+				if(estado.get(56).booleanValue()) {
 					
-					label_p2_c.get(11).setIcon(termometro_vacio_escalado);
-					estado_p2.set(11,false);
+					arraylistcalefaccion.get(56).setIcon(termometro_vacio_escalado);
+					estado.set(56,false);
 				}else {
-					label_p2_c.get(11).setIcon(termometro_escalado);
-					estado_p2.set(11,true);
+					arraylistcalefaccion.get(56).setIcon(termometro_escalado);
+					estado.set(56,true);
 
 				}
 			}
@@ -2030,13 +2015,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_213_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(12).booleanValue()) {
+				if(estado.get(57).booleanValue()) {
 					
-					label_p2_c.get(12).setIcon(termometro_vacio_escalado);
-					estado_p2.set(12,false);
+					arraylistcalefaccion.get(57).setIcon(termometro_vacio_escalado);
+					estado.set(57,false);
 				}else {
-					label_p2_c.get(12).setIcon(termometro_escalado);
-					estado_p2.set(12,true);
+					arraylistcalefaccion.get(57).setIcon(termometro_escalado);
+					estado.set(57,true);
 
 				}
 			}
@@ -2049,13 +2034,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_214_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(13).booleanValue()) {
+				if(estado.get(58).booleanValue()) {
 					
-					label_p2_c.get(13).setIcon(termometro_vacio_escalado);
-					estado_p2.set(13,false);
+					arraylistcalefaccion.get(58).setIcon(termometro_vacio_escalado);
+					estado.set(58,false);
 				}else {
-					label_p2_c.get(13).setIcon(termometro_escalado);
-					estado_p2.set(13,true);
+					arraylistcalefaccion.get(58).setIcon(termometro_escalado);
+					estado.set(58,true);
 
 				}
 			}
@@ -2068,13 +2053,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_215_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(14).booleanValue()) {
+				if(estado.get(59).booleanValue()) {
 					
-					label_p2_c.get(14).setIcon(termometro_vacio_escalado);
-					estado_p2.set(14,false);
+					arraylistcalefaccion.get(59).setIcon(termometro_vacio_escalado);
+					estado.set(59,false);
 				}else {
-					label_p2_c.get(14).setIcon(termometro_escalado);
-					estado_p2.set(14,true);
+					arraylistcalefaccion.get(59).setIcon(termometro_escalado);
+					estado.set(59,true);
 
 				}
 			}
@@ -2087,13 +2072,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_216_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(15).booleanValue()) {
+				if(estado.get(60).booleanValue()) {
 					
-					label_p2_c.get(15).setIcon(termometro_vacio_escalado);
-					estado_p2.set(15,false);
+					arraylistcalefaccion.get(60).setIcon(termometro_vacio_escalado);
+					estado.set(60,false);
 				}else {
-					label_p2_c.get(15).setIcon(termometro_escalado);
-					estado_p2.set(15,true);
+					arraylistcalefaccion.get(60).setIcon(termometro_escalado);
+					estado.set(60,true);
 
 				}
 			}
@@ -2106,13 +2091,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_217_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(16).booleanValue()) {
+				if(estado.get(61).booleanValue()) {
 					
-					label_p2_c.get(16).setIcon(termometro_vacio_escalado);
-					estado_p2.set(16,false);
+					arraylistcalefaccion.get(61).setIcon(termometro_vacio_escalado);
+					estado.set(61,false);
 				}else {
-					label_p2_c.get(16).setIcon(termometro_escalado);
-					estado_p2.set(16,true);
+					arraylistcalefaccion.get(61).setIcon(termometro_escalado);
+					estado.set(61,true);
 
 				}
 			}
@@ -2125,13 +2110,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_218_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(17).booleanValue()) {
+				if(estado.get(62).booleanValue()) {
 					
-					label_p2_c.get(17).setIcon(termometro_vacio_escalado);
-					estado_p2.set(17,false);
+					arraylistcalefaccion.get(62).setIcon(termometro_vacio_escalado);
+					estado.set(62,false);
 				}else {
-					label_p2_c.get(17).setIcon(termometro_escalado);
-					estado_p2.set(17,true);
+					arraylistcalefaccion.get(62).setIcon(termometro_escalado);
+					estado.set(62,true);
 
 				}
 			}
@@ -2144,13 +2129,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_219_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(18).booleanValue()) {
+				if(estado.get(63).booleanValue()) {
 					
-					label_p2_c.get(18).setIcon(termometro_vacio_escalado);
-					estado_p2.set(18,false);
+					arraylistcalefaccion.get(63).setIcon(termometro_vacio_escalado);
+					estado.set(63,false);
 				}else {
-					label_p2_c.get(18).setIcon(termometro_escalado);
-					estado_p2.set(18,true);
+					arraylistcalefaccion.get(63).setIcon(termometro_escalado);
+					estado.set(63,true);
 
 				}
 			}
@@ -2163,13 +2148,13 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_220_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				if(estado_p2.get(19).booleanValue()) {
+				if(estado.get(64).booleanValue()) {
 					
-					label_p2_c.get(19).setIcon(termometro_vacio_escalado);
-					estado_p2.set(19,false);
+					arraylistcalefaccion.get(64).setIcon(termometro_vacio_escalado);
+					estado.set(64,false);
 				}else {
-					label_p2_c.get(19).setIcon(termometro_escalado);
-					estado_p2.set(19,true);
+					arraylistcalefaccion.get(64).setIcon(termometro_escalado);
+					estado.set(64,true);
 
 				}
 			}
@@ -2183,52 +2168,52 @@ public class principal implements ActionListener, MouseListener{
 		
 		
 		
-		label_p2_c.add(lbl_cl_201_c);
-		label_p2_c.add(lbl_cl_202_c);
-		label_p2_c.add(lbl_cl_203_c);
-		label_p2_c.add(lbl_cl_204_c);
-		label_p2_c.add(lbl_cl_205_c);
-		label_p2_c.add(lbl_cl_206_c);
-		label_p2_c.add(lbl_cl_207_c);
-		label_p2_c.add(lbl_cl_208_c);
-		label_p2_c.add(lbl_cl_209_c);
-		label_p2_c.add(lbl_cl_210_c);
-		label_p2_c.add(lbl_cl_211_c);
-		label_p2_c.add(lbl_cl_212_c);
-		label_p2_c.add(lbl_cl_213_c);
-		label_p2_c.add(lbl_cl_214_c);
-		label_p2_c.add(lbl_cl_215_c);
-		label_p2_c.add(lbl_cl_216_c);
-		label_p2_c.add(lbl_cl_217_c);
-		label_p2_c.add(lbl_cl_218_c);
-		label_p2_c.add(lbl_cl_219_c);
-		label_p2_c.add(lbl_cl_220_c);
+		arraylistcalefaccion.add(lbl_cl_201_c);
+		arraylistcalefaccion.add(lbl_cl_202_c);
+		arraylistcalefaccion.add(lbl_cl_203_c);
+		arraylistcalefaccion.add(lbl_cl_204_c);
+		arraylistcalefaccion.add(lbl_cl_205_c);
+		arraylistcalefaccion.add(lbl_cl_206_c);
+		arraylistcalefaccion.add(lbl_cl_207_c);
+		arraylistcalefaccion.add(lbl_cl_208_c);
+		arraylistcalefaccion.add(lbl_cl_209_c);
+		arraylistcalefaccion.add(lbl_cl_210_c);
+		arraylistcalefaccion.add(lbl_cl_211_c);
+		arraylistcalefaccion.add(lbl_cl_212_c);
+		arraylistcalefaccion.add(lbl_cl_213_c);
+		arraylistcalefaccion.add(lbl_cl_214_c);
+		arraylistcalefaccion.add(lbl_cl_215_c);
+		arraylistcalefaccion.add(lbl_cl_216_c);
+		arraylistcalefaccion.add(lbl_cl_217_c);
+		arraylistcalefaccion.add(lbl_cl_218_c);
+		arraylistcalefaccion.add(lbl_cl_219_c);
+		arraylistcalefaccion.add(lbl_cl_220_c);
 		
 		
 		/*RANDOMIZADOR PISO 2*/
 		
-		for(int i=0;i<label_p2_c.size();i++) {
+		for(int i=45;i<65;i++) {
 			result = r.nextInt(100-1) + 1;
 			if(result>30) {
-				estado_p2.add(true);
-			label_p2_c.get(i).setIcon(termometro_escalado);
+				estado.add(true);
+				arraylistcalefaccion.get(i).setIcon(termometro_escalado);
 			}else {
-				estado_p2.add(false);
-				label_p2_c.get(i).setIcon(termometro_vacio_escalado);
+				estado.add(false);
+				arraylistcalefaccion.get(i).setIcon(termometro_vacio_escalado);
 
 			}
 
 		}
 		
-		for(int i=0;i<label_p2_a.size();i++) {
+		for(int i=45;i<64;i++) {
 			result = r.nextInt(100-1) + 1;
 			if (result>15) {
-				label_p2_a.get(i).setIcon(luz_verde_escalada);
+				arraylistalarmas.get(i).setIcon(luz_verde_escalada);
 
 			}
 			
 		else {
-			label_p2_a.get(i).setIcon(luz_roja_escalada);
+			arraylistalarmas.get(i).setIcon(luz_roja_escalada);
 		}
 	}
 	   	
