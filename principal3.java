@@ -53,26 +53,26 @@ public class principal3 {
 	private JLabel lbl_cl_204_a;
 	private JLabel lbl_img_piso2;
 	
-	private JLabel lbl_cl_220_C;
-	private JLabel lbl_cl_216_C;
-	private JLabel lbl_cl_215_C;
-	private JLabel lbl_cl_214_C;
-	private JLabel lbl_cl_217_C;
-	private JLabel lbl_cl_213_C;
-	private JLabel lbl_cl_218_C;
-	private JLabel lbl_cl_206_C;
-	private JLabel lbl_cl_208_C;
-	private JLabel lbl_cl_210_C;
-	private JLabel lbl_cl_212_C;
-	private JLabel lbl_cl_219_C;
-	private JLabel lbl_cl_211_C;
-	private JLabel lbl_cl_209_C;
-	private JLabel lbl_cl_207_C;
-	private JLabel lbl_cl_205_C;
-	private JLabel lbl_cl_201_C;
-	private JLabel lbl_cl_203_C;
-	private JLabel lbl_cl_202_C;
-	private JLabel lbl_cl_204_C;
+	private JLabel lbl_cl_220_c;
+	private JLabel lbl_cl_216_c;
+	private JLabel lbl_cl_215_c;
+	private JLabel lbl_cl_214_c;
+	private JLabel lbl_cl_217_c;
+	private JLabel lbl_cl_213_c;
+	private JLabel lbl_cl_218_c;
+	private JLabel lbl_cl_206_c;
+	private JLabel lbl_cl_208_c;
+	private JLabel lbl_cl_210_c;
+	private JLabel lbl_cl_212_c;
+	private JLabel lbl_cl_219_c;
+	private JLabel lbl_cl_211_c;
+	private JLabel lbl_cl_209_c;
+	private JLabel lbl_cl_207_c;
+	private JLabel lbl_cl_205_c;
+	private JLabel lbl_cl_201_c;
+	private JLabel lbl_cl_203_c;
+	private JLabel lbl_cl_202_c;
+	private JLabel lbl_cl_204_c;
 	private JLabel lbl_img_piso2_1;
 
 	/**
@@ -113,10 +113,10 @@ public class principal3 {
 		
 		//arraylist de labels de alarmas
 
-		ArrayList<JLabel> label_alarmas_p2 = new ArrayList<JLabel>(); 
+		ArrayList<JLabel> label_p2_a = new ArrayList<JLabel>(); 
 		//arraylist de labels de calefaccion
 		
-		ArrayList<JLabel> labelC_p2 = new ArrayList<JLabel>(); 
+		ArrayList<JLabel> label_p2_c = new ArrayList<JLabel>(); 
 
 		//arraylist de estado de calefaccion
 		
@@ -301,412 +301,412 @@ public class principal3 {
 	   	lbl_cl_204_a.setBounds(540, 350, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_204_a);
 	   	
-		label_alarmas_p2.add(lbl_cl_201_a);
-		label_alarmas_p2.add(lbl_cl_202_a);
-		label_alarmas_p2.add(lbl_cl_203_a);
-		label_alarmas_p2.add(lbl_cl_204_a);
-		label_alarmas_p2.add(lbl_cl_205_a);
-		label_alarmas_p2.add(lbl_cl_206_a);
-		label_alarmas_p2.add(lbl_cl_207_a);
-		label_alarmas_p2.add(lbl_cl_208_a);
-		label_alarmas_p2.add(lbl_cl_209_a);
-		label_alarmas_p2.add(lbl_cl_210_a);
-		label_alarmas_p2.add(lbl_cl_211_a);
-		label_alarmas_p2.add(lbl_cl_212_a);
-		label_alarmas_p2.add(lbl_cl_213_a);
-		label_alarmas_p2.add(lbl_cl_214_a);
-		label_alarmas_p2.add(lbl_cl_215_a);
-		label_alarmas_p2.add(lbl_cl_216_a);
-		label_alarmas_p2.add(lbl_cl_217_a);
-		label_alarmas_p2.add(lbl_cl_218_a);
-		label_alarmas_p2.add(lbl_cl_219_a);
-		label_alarmas_p2.add(lbl_cl_220_a);
+		label_p2_a.add(lbl_cl_201_a);
+		label_p2_a.add(lbl_cl_202_a);
+		label_p2_a.add(lbl_cl_203_a);
+		label_p2_a.add(lbl_cl_204_a);
+		label_p2_a.add(lbl_cl_205_a);
+		label_p2_a.add(lbl_cl_206_a);
+		label_p2_a.add(lbl_cl_207_a);
+		label_p2_a.add(lbl_cl_208_a);
+		label_p2_a.add(lbl_cl_209_a);
+		label_p2_a.add(lbl_cl_210_a);
+		label_p2_a.add(lbl_cl_211_a);
+		label_p2_a.add(lbl_cl_212_a);
+		label_p2_a.add(lbl_cl_213_a);
+		label_p2_a.add(lbl_cl_214_a);
+		label_p2_a.add(lbl_cl_215_a);
+		label_p2_a.add(lbl_cl_216_a);
+		label_p2_a.add(lbl_cl_217_a);
+		label_p2_a.add(lbl_cl_218_a);
+		label_p2_a.add(lbl_cl_219_a);
+		label_p2_a.add(lbl_cl_220_a);
 		
 		//Piso 2 colocación
 		
 		
-		lbl_cl_201_C = new JLabel("");		
-		lbl_cl_201_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_201_c = new JLabel("");		
+		lbl_cl_201_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(0).booleanValue()) {
 					
-					labelC_p2.get(0).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(0).setIcon(termometro_vacio_escalado);
 					estado_p2.set(0,false);
 				}else {
-					labelC_p2.get(0).setIcon(termometro_escalado);
+					label_p2_c.get(0).setIcon(termometro_escalado);
 					estado_p2.set(0,true);
 
 				}
 			}
 		});
-		lbl_cl_201_C.setBounds(423, 387, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_201_C);
+		lbl_cl_201_c.setBounds(423, 387, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_201_c);
 		
-		lbl_cl_202_C = new JLabel("");		
-		lbl_cl_202_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_202_c = new JLabel("");		
+		lbl_cl_202_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(1).booleanValue()) {
 					
-					labelC_p2.get(1).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(1).setIcon(termometro_vacio_escalado);
 					estado_p2.set(1,false);
 				}else {
-					labelC_p2.get(1).setIcon(termometro_escalado);
+					label_p2_c.get(1).setIcon(termometro_escalado);
 					estado_p2.set(1,true);
 
 				}
 			}
 		});
-		lbl_cl_202_C.setBounds(490, 380, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_202_C);
+		lbl_cl_202_c.setBounds(490, 380, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_202_c);
 		
-		lbl_cl_203_C = new JLabel("");		
-		lbl_cl_203_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_203_c = new JLabel("");		
+		lbl_cl_203_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(2).booleanValue()) {
 					
-					labelC_p2.get(2).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(2).setIcon(termometro_vacio_escalado);
 					estado_p2.set(2,false);
 				}else {
-					labelC_p2.get(2).setIcon(termometro_escalado);
+					label_p2_c.get(2).setIcon(termometro_escalado);
 					estado_p2.set(2,true);
 
 				}
 			}
 		});
-		lbl_cl_203_C.setBounds(530, 380, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_203_C);
+		lbl_cl_203_c.setBounds(530, 380, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_203_c);
 		
-		lbl_cl_204_C = new JLabel("");		
-		lbl_cl_204_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_204_c = new JLabel("");		
+		lbl_cl_204_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(3).booleanValue()) {
 					
-					labelC_p2.get(3).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(3).setIcon(termometro_vacio_escalado);
 					estado_p2.set(3,false);
 				}else {
-					labelC_p2.get(3).setIcon(termometro_escalado);
+					label_p2_c.get(3).setIcon(termometro_escalado);
 					estado_p2.set(3,true);
 
 				}
 			}
 		});
-		lbl_cl_204_C.setBounds(560, 340, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_204_C);
+		lbl_cl_204_c.setBounds(560, 340, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_204_c);
 		
-		lbl_cl_205_C = new JLabel("");		
-		lbl_cl_205_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_205_c = new JLabel("");		
+		lbl_cl_205_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(4).booleanValue()) {
 					
-					labelC_p2.get(4).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(4).setIcon(termometro_vacio_escalado);
 					estado_p2.set(4,false);
 				}else {
-					labelC_p2.get(4).setIcon(termometro_escalado);
+					label_p2_c.get(4).setIcon(termometro_escalado);
 					estado_p2.set(4,true);
 
 				}
 			}
 		});
-		lbl_cl_205_C.setBounds(423, 320, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_205_C);
+		lbl_cl_205_c.setBounds(423, 320, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_205_c);
 		
-		lbl_cl_206_C = new JLabel("");		
-		lbl_cl_206_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_206_c = new JLabel("");		
+		lbl_cl_206_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(5).booleanValue()) {
 					
-					labelC_p2.get(5).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(5).setIcon(termometro_vacio_escalado);
 					estado_p2.set(5,false);
 				}else {
-					labelC_p2.get(5).setIcon(termometro_escalado);
+					label_p2_c.get(5).setIcon(termometro_escalado);
 					estado_p2.set(5,true);
 
 				}
 			}
 		});
-		lbl_cl_206_C.setBounds(560, 310, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_206_C);
+		lbl_cl_206_c.setBounds(560, 310, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_206_c);
 		
-		lbl_cl_207_C = new JLabel("");		
-		lbl_cl_207_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_207_c = new JLabel("");		
+		lbl_cl_207_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(6).booleanValue()) {
 					
-					labelC_p2.get(6).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(6).setIcon(termometro_vacio_escalado);
 					estado_p2.set(6,false);
 				}else {
-					labelC_p2.get(6).setIcon(termometro_escalado);
+					label_p2_c.get(6).setIcon(termometro_escalado);
 					estado_p2.set(6,true);
 
 				}
 			}
 		});
-		lbl_cl_207_C.setBounds(560, 275, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_207_C);
+		lbl_cl_207_c.setBounds(560, 275, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_207_c);
 		
-		lbl_cl_208_C = new JLabel("");		
-		lbl_cl_208_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_208_c = new JLabel("");		
+		lbl_cl_208_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(7).booleanValue()) {
 					
-					labelC_p2.get(7).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(7).setIcon(termometro_vacio_escalado);
 					estado_p2.set(7,false);
 				}else {
-					labelC_p2.get(7).setIcon(termometro_escalado);
+					label_p2_c.get(7).setIcon(termometro_escalado);
 					estado_p2.set(7,true);
 
 				}
 			}
 		});
-		lbl_cl_208_C.setBounds(560, 185, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_208_C);
+		lbl_cl_208_c.setBounds(560, 185, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_208_c);
 		
-		lbl_cl_209_C = new JLabel("");		
-		lbl_cl_209_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_209_c = new JLabel("");		
+		lbl_cl_209_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(8).booleanValue()) {
 					
-					labelC_p2.get(8).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(8).setIcon(termometro_vacio_escalado);
 					estado_p2.set(8,false);
 				}else {
-					labelC_p2.get(8).setIcon(termometro_escalado);
+					label_p2_c.get(8).setIcon(termometro_escalado);
 					estado_p2.set(8,true);
 
 				}
 			}
 		});
-		lbl_cl_209_C.setBounds(420, 160, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_209_C);
+		lbl_cl_209_c.setBounds(420, 160, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_209_c);
 		
-		lbl_cl_210_C = new JLabel("");		
-		lbl_cl_210_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_210_c = new JLabel("");		
+		lbl_cl_210_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(9).booleanValue()) {
 					
-					labelC_p2.get(9).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(9).setIcon(termometro_vacio_escalado);
 					estado_p2.set(9,false);
 				}else {
-					labelC_p2.get(9).setIcon(termometro_escalado);
+					label_p2_c.get(9).setIcon(termometro_escalado);
 					estado_p2.set(9,true);
 
 				}
 			}
 		});
-		lbl_cl_210_C.setBounds(560, 145, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_210_C);
+		lbl_cl_210_c.setBounds(560, 145, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_210_c);
 		
-		lbl_cl_211_C = new JLabel("");		
-		lbl_cl_211_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_211_c = new JLabel("");		
+		lbl_cl_211_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(10).booleanValue()) {
 					
-					labelC_p2.get(10).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(10).setIcon(termometro_vacio_escalado);
 					estado_p2.set(10,false);
 				}else {
-					labelC_p2.get(10).setIcon(termometro_escalado);
+					label_p2_c.get(10).setIcon(termometro_escalado);
 					estado_p2.set(10,true);
 
 				}
 			}
 		});
-		lbl_cl_211_C.setBounds(420, 120, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_211_C);
+		lbl_cl_211_c.setBounds(420, 120, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_211_c);
 		
-		lbl_cl_212_C = new JLabel("");		
-		lbl_cl_212_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_212_c = new JLabel("");		
+		lbl_cl_212_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(11).booleanValue()) {
 					
-					labelC_p2.get(11).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(11).setIcon(termometro_vacio_escalado);
 					estado_p2.set(11,false);
 				}else {
-					labelC_p2.get(11).setIcon(termometro_escalado);
+					label_p2_c.get(11).setIcon(termometro_escalado);
 					estado_p2.set(11,true);
 
 				}
 			}
 		});
-		lbl_cl_212_C.setBounds(560, 90, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_212_C);
+		lbl_cl_212_c.setBounds(560, 90, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_212_c);
 		
-		lbl_cl_213_C = new JLabel("");		
-		lbl_cl_213_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_213_c = new JLabel("");		
+		lbl_cl_213_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(12).booleanValue()) {
 					
-					labelC_p2.get(12).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(12).setIcon(termometro_vacio_escalado);
 					estado_p2.set(12,false);
 				}else {
-					labelC_p2.get(12).setIcon(termometro_escalado);
+					label_p2_c.get(12).setIcon(termometro_escalado);
 					estado_p2.set(12,true);
 
 				}
 			}
 		});
-		lbl_cl_213_C.setBounds(420, 70, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_213_C);
+		lbl_cl_213_c.setBounds(420, 70, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_213_c);
 		
-		lbl_cl_214_C = new JLabel("");		
-		lbl_cl_214_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_214_c = new JLabel("");		
+		lbl_cl_214_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(13).booleanValue()) {
 					
-					labelC_p2.get(13).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(13).setIcon(termometro_vacio_escalado);
 					estado_p2.set(13,false);
 				}else {
-					labelC_p2.get(13).setIcon(termometro_escalado);
+					label_p2_c.get(13).setIcon(termometro_escalado);
 					estado_p2.set(13,true);
 
 				}
 			}
 		});
-		lbl_cl_214_C.setBounds(480, 35, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_214_C);
+		lbl_cl_214_c.setBounds(480, 35, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_214_c);
 		
-		lbl_cl_215_C = new JLabel("");		
-		lbl_cl_215_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_215_c = new JLabel("");		
+		lbl_cl_215_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(14).booleanValue()) {
 					
-					labelC_p2.get(14).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(14).setIcon(termometro_vacio_escalado);
 					estado_p2.set(14,false);
 				}else {
-					labelC_p2.get(14).setIcon(termometro_escalado);
+					label_p2_c.get(14).setIcon(termometro_escalado);
 					estado_p2.set(14,true);
 
 				}
 			}
 		});
-		lbl_cl_215_C.setBounds(330, 170, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_215_C);
+		lbl_cl_215_c.setBounds(330, 170, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_215_c);
 		
-		lbl_cl_216_C = new JLabel("");		
-		lbl_cl_216_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_216_c = new JLabel("");		
+		lbl_cl_216_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(15).booleanValue()) {
 					
-					labelC_p2.get(15).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(15).setIcon(termometro_vacio_escalado);
 					estado_p2.set(15,false);
 				}else {
-					labelC_p2.get(15).setIcon(termometro_escalado);
+					label_p2_c.get(15).setIcon(termometro_escalado);
 					estado_p2.set(15,true);
 
 				}
 			}
 		});
-		lbl_cl_216_C.setBounds(330, 285, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_216_C);
+		lbl_cl_216_c.setBounds(330, 285, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_216_c);
 		
-		lbl_cl_217_C = new JLabel("");		
-		lbl_cl_217_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_217_c = new JLabel("");		
+		lbl_cl_217_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(16).booleanValue()) {
 					
-					labelC_p2.get(16).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(16).setIcon(termometro_vacio_escalado);
 					estado_p2.set(16,false);
 				}else {
-					labelC_p2.get(16).setIcon(termometro_escalado);
+					label_p2_c.get(16).setIcon(termometro_escalado);
 					estado_p2.set(16,true);
 
 				}
 			}
 		});
-		lbl_cl_217_C.setBounds(190, 285, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_217_C);
+		lbl_cl_217_c.setBounds(190, 285, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_217_c);
 		
-		lbl_cl_218_C = new JLabel("");		
-		lbl_cl_218_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_218_c = new JLabel("");		
+		lbl_cl_218_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(17).booleanValue()) {
 					
-					labelC_p2.get(17).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(17).setIcon(termometro_vacio_escalado);
 					estado_p2.set(17,false);
 				}else {
-					labelC_p2.get(17).setIcon(termometro_escalado);
+					label_p2_c.get(17).setIcon(termometro_escalado);
 					estado_p2.set(17,true);
 
 				}
 			}
 		});
-		lbl_cl_218_C.setBounds(150, 285, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_218_C);
+		lbl_cl_218_c.setBounds(150, 285, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_218_c);
 		
-		lbl_cl_219_C = new JLabel("");		
-		lbl_cl_219_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_219_c = new JLabel("");		
+		lbl_cl_219_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(18).booleanValue()) {
 					
-					labelC_p2.get(18).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(18).setIcon(termometro_vacio_escalado);
 					estado_p2.set(18,false);
 				}else {
-					labelC_p2.get(18).setIcon(termometro_escalado);
+					label_p2_c.get(18).setIcon(termometro_escalado);
 					estado_p2.set(18,true);
 
 				}
 			}
 		});
-		lbl_cl_219_C.setBounds(109, 300, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_219_C);
+		lbl_cl_219_c.setBounds(109, 300, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_219_c);
 		
-		lbl_cl_220_C = new JLabel("");		
-		lbl_cl_220_C.addMouseListener(new MouseAdapter() {
+		lbl_cl_220_c = new JLabel("");		
+		lbl_cl_220_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				if(estado_p2.get(19).booleanValue()) {
 					
-					labelC_p2.get(19).setIcon(termometro_vacio_escalado);
+					label_p2_c.get(19).setIcon(termometro_vacio_escalado);
 					estado_p2.set(19,false);
 				}else {
-					labelC_p2.get(19).setIcon(termometro_escalado);
+					label_p2_c.get(19).setIcon(termometro_escalado);
 					estado_p2.set(19,true);
 
 				}
 			}
 		});
-		lbl_cl_220_C.setBounds(55, 172, 39, 25);
-		panel_calefaccion_p2.add(lbl_cl_220_C);
+		lbl_cl_220_c.setBounds(55, 172, 39, 25);
+		panel_calefaccion_p2.add(lbl_cl_220_c);
 		
 		
 		
-		labelC_p2.add(lbl_cl_201_C);
-		labelC_p2.add(lbl_cl_202_C);
-		labelC_p2.add(lbl_cl_203_C);
-		labelC_p2.add(lbl_cl_204_C);
-		labelC_p2.add(lbl_cl_205_C);
-		labelC_p2.add(lbl_cl_206_C);
-		labelC_p2.add(lbl_cl_207_C);
-		labelC_p2.add(lbl_cl_208_C);
-		labelC_p2.add(lbl_cl_209_C);
-		labelC_p2.add(lbl_cl_210_C);
-		labelC_p2.add(lbl_cl_211_C);
-		labelC_p2.add(lbl_cl_212_C);
-		labelC_p2.add(lbl_cl_213_C);
-		labelC_p2.add(lbl_cl_214_C);
-		labelC_p2.add(lbl_cl_215_C);
-		labelC_p2.add(lbl_cl_216_C);
-		labelC_p2.add(lbl_cl_217_C);
-		labelC_p2.add(lbl_cl_218_C);
-		labelC_p2.add(lbl_cl_219_C);
-		labelC_p2.add(lbl_cl_220_C);
+		label_p2_c.add(lbl_cl_201_c);
+		label_p2_c.add(lbl_cl_202_c);
+		label_p2_c.add(lbl_cl_203_c);
+		label_p2_c.add(lbl_cl_204_c);
+		label_p2_c.add(lbl_cl_205_c);
+		label_p2_c.add(lbl_cl_206_c);
+		label_p2_c.add(lbl_cl_207_c);
+		label_p2_c.add(lbl_cl_208_c);
+		label_p2_c.add(lbl_cl_209_c);
+		label_p2_c.add(lbl_cl_210_c);
+		label_p2_c.add(lbl_cl_211_c);
+		label_p2_c.add(lbl_cl_212_c);
+		label_p2_c.add(lbl_cl_213_c);
+		label_p2_c.add(lbl_cl_214_c);
+		label_p2_c.add(lbl_cl_215_c);
+		label_p2_c.add(lbl_cl_216_c);
+		label_p2_c.add(lbl_cl_217_c);
+		label_p2_c.add(lbl_cl_218_c);
+		label_p2_c.add(lbl_cl_219_c);
+		label_p2_c.add(lbl_cl_220_c);
 			
 		lbl_img_piso2_1 = new JLabel("");
 		lbl_img_piso2_1.setBounds(0, -80, 600, 600);
@@ -721,33 +721,28 @@ public class principal3 {
 		Random r = new Random();
 		int result;
 
-		for(int i=0;i<labelC_p2.size();i++) {
+		for(int i=0;i<label_p2_c.size();i++) {
 			result = r.nextInt(100-1) + 1;
-			System.out.println(result);
 			if(result>30) {
 				estado_p2.add(true);
-			labelC_p2.get(i).setIcon(termometro_escalado);
+			label_p2_c.get(i).setIcon(termometro_escalado);
 			}else {
 				estado_p2.add(false);
-				labelC_p2.get(i).setIcon(termometro_vacio_escalado);
+				label_p2_c.get(i).setIcon(termometro_vacio_escalado);
 
 			}
 
 		}
-		for(int i=0;i<estado_p2.size();i++) {
-			System.out.println(estado_p2.get(i).toString());
-		}
 		
-		for(int i=0;i<label_alarmas_p2.size();i++) {
+		for(int i=0;i<label_p2_a.size();i++) {
 			result = r.nextInt(100-1) + 1;
-			System.out.println(result);
 			if (result>15) {
-				label_alarmas_p2.get(i).setIcon(luz_verde_escalada);
+				label_p2_a.get(i).setIcon(luz_verde_escalada);
 
 			}
 			
 		else {
-			label_alarmas_p2.get(i).setIcon(luz_roja_escalada);
+			label_p2_a.get(i).setIcon(luz_roja_escalada);
 		}
 	}
 }
