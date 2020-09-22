@@ -5,6 +5,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.AbstractButton;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -19,7 +20,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import javax.swing.SwingConstants;
 
 public class principal implements ActionListener, MouseListener{
 
@@ -40,6 +40,8 @@ public class principal implements ActionListener, MouseListener{
 	private JButton btn_llamada_de_emergencia;
 	private JLabel lbl_plano_piso_0;
 	private JLabel lblAlarmaCalefaccion;
+	
+	
 	//botones de alarmas
 	
 	/*LABELS PISO 0*/
@@ -405,47 +407,58 @@ public class principal implements ActionListener, MouseListener{
 
 		lbl_cl_025_a = new JLabel("");
 		lbl_cl_025_a.setBounds(191, 197, 39, 13);
+		lbl_cl_025_a.setName("aula025");
 		panel_alarmas_p0.add(lbl_cl_025_a);
 		
 		lbl_cl_023_a = new JLabel("");
 		lbl_cl_023_a.setBounds(191, 250, 39, 13);
+		lbl_cl_023_a.setName("aula023");
 		panel_alarmas_p0.add(lbl_cl_023_a);
 		
 	   	
 	   	lbl_cl_024_a = new JLabel("");
 	   	lbl_cl_024_a.setBounds(142, 250, 39, 13);
+		lbl_cl_024_a.setName("aula024");
 	   	panel_alarmas_p0.add(lbl_cl_024_a);
 	   			
 	   	lbl_cl_022_a = new JLabel("");
 	   	lbl_cl_022_a.setBounds(234, 250, 39, 13);
+		lbl_cl_022_a.setName("aula022");
 	   	panel_alarmas_p0.add(lbl_cl_022_a);
 	   			
 	   	lbl_cl_021_a = new JLabel("");
 	   	lbl_cl_021_a.setBounds(283, 250, 39, 13);
+		lbl_cl_021_a.setName("aula021");
 	   	panel_alarmas_p0.add(lbl_cl_021_a);
 	   			
 	   	lbl_cl_020_a = new JLabel("");
 	   	lbl_cl_020_a.setBounds(340, 250, 39, 13);
+		lbl_cl_020_a.setName("aula020");
 	   	panel_alarmas_p0.add(lbl_cl_020_a);
 	   					
 	   	lbl_cl_019_a = new JLabel("");
 	   	lbl_cl_019_a.setBounds(379, 197, 39, 13);
+		lbl_cl_019_a.setName("aula019");
 	   	panel_alarmas_p0.add(lbl_cl_019_a);
 	   					
 	   	lbl_cl_007_a = new JLabel("");
 	   	lbl_cl_007_a.setBounds(423, 159, 39, 13);
+		lbl_cl_007_a.setName("aula007");
 	   	panel_alarmas_p0.add(lbl_cl_007_a);
 	   							
 	   	lbl_cl_009_a = new JLabel("");
 	   	lbl_cl_009_a.setBounds(423, 136, 39, 13);
+		lbl_cl_009_a.setName("aula009");
 	   	panel_alarmas_p0.add(lbl_cl_009_a);
 	   							
 	   	lbl_cl_011_a = new JLabel("");
 	   	lbl_cl_011_a.setBounds(423, 113, 39, 13);
+		lbl_cl_011_a.setName("aula011");
 	   	panel_alarmas_p0.add(lbl_cl_011_a);
 	   							
 	   	lbl_cl_012_a = new JLabel("");
 	   	lbl_cl_012_a.setBounds(423, 90, 39, 13);
+		lbl_cl_012_a.setName("aula012");
 	   	panel_alarmas_p0.add(lbl_cl_012_a);
 	   							
 	   	lbl_cl_014_a = new JLabel("");
@@ -454,55 +467,68 @@ public class principal implements ActionListener, MouseListener{
 	   							
 	   	lbl_cl_016_a = new JLabel("");
 	   	lbl_cl_016_a.setBounds(423, 44, 39, 13);
+		lbl_cl_016_a.setName("aula016");
 	   	panel_alarmas_p0.add(lbl_cl_016_a);
 	   									
 	   	lbl_cl_017_a = new JLabel("");
 	   	lbl_cl_017_a.setBounds(501, 28, 39, 13);
+		lbl_cl_017_a.setName("aula017");
 	   	panel_alarmas_p0.add(lbl_cl_017_a);
 	   									
 	   	lbl_cl_015_a = new JLabel("");
 	   	lbl_cl_015_a.setBounds(561, 46, 39, 13);
+		lbl_cl_015_a.setName("aula015");
 	   	panel_alarmas_p0.add(lbl_cl_015_a);
 	   	
 	   	lbl_cl_026_a = new JLabel("");
 	   	lbl_cl_026_a.setBounds(92, 210, 62, 13);
+		lbl_cl_026_a.setName("aula026");
 	   	panel_alarmas_p0.add(lbl_cl_026_a);
 	   											
 	   	lbl_cl_013_a = new JLabel("");
 	   	lbl_cl_013_a.setBounds(561, 67, 39, 13);
+		lbl_cl_013_a.setName("aula013");
 	   	panel_alarmas_p0.add(lbl_cl_013_a);
 	   	
 	   											
 	   	lbl_cl_010_a = new JLabel("");
 	   	lbl_cl_010_a.setBounds(561, 90, 39, 13);
+		lbl_cl_010_a.setName("aula010");
 	   	panel_alarmas_p0.add(lbl_cl_010_a);
 	   													
 	   	lbl_cl_008_a = new JLabel("");
 	   	lbl_cl_008_a.setBounds(561, 147, 39, 13);
+		lbl_cl_008_a.setName("aula008");
 	   	panel_alarmas_p0.add(lbl_cl_008_a);
 	   													
 	   	lbl_cl_006_a = new JLabel("");
 	   	lbl_cl_006_a.setBounds(561, 170, 39, 13);
+		lbl_cl_006_a.setName("aula006");
 	   	panel_alarmas_p0.add(lbl_cl_006_a);
 	   															
 	   	lbl_cl_001_a = new JLabel("");
 	   	lbl_cl_001_a.setBounds(423, 387, 39, 13);
+		lbl_cl_001_a.setName("aula001");
 	   	panel_alarmas_p0.add(lbl_cl_001_a);
 	   																	
 	   	lbl_cl_003_a = new JLabel("");
 	   	lbl_cl_003_a.setBounds(423, 334, 39, 13);
+		lbl_cl_003_a.setName("aula003");
 	   	panel_alarmas_p0.add(lbl_cl_003_a);
 	   																	
 	   	lbl_cl_002_a = new JLabel("");
 	   	lbl_cl_002_a.setBounds(561, 334, 39, 13);
+		lbl_cl_002_a.setName("aula002");
 	   	panel_alarmas_p0.add(lbl_cl_002_a);
 	   																			
 	   	lbl_cl_004_a = new JLabel("");
 	   	lbl_cl_004_a.setBounds(423, 313, 39, 13);
+		lbl_cl_004_a.setName("aula004");
 	   	panel_alarmas_p0.add(lbl_cl_004_a);
 	   																			
 	   	lbl_cl_005_a = new JLabel("");
 	   	lbl_cl_005_a.setBounds(561, 298, 39, 13);
+		lbl_cl_005_a.setName("aula005");
 	   	panel_alarmas_p0.add(lbl_cl_005_a);
 	   	
 	   	label_p0_a.add(lbl_cl_001_a);
@@ -532,7 +558,8 @@ public class principal implements ActionListener, MouseListener{
 		
 		/*CALEFACCION*/
 		
-		lbl_cl_025_c = new JLabel("");		
+		lbl_cl_025_c = new JLabel("");	
+		lbl_cl_025_c.setName("aula025_c");
 		lbl_cl_025_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -551,6 +578,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p0.add(lbl_cl_025_c);
 
 		lbl_cl_023_c = new JLabel("");
+		lbl_cl_023_c.setName("aula023_c");
 		lbl_cl_023_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -570,6 +598,7 @@ public class principal implements ActionListener, MouseListener{
 		
 	   	
 	   	lbl_cl_024_c = new JLabel("");
+		lbl_cl_024_c.setName("aula024_c");
 	   	lbl_cl_024_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -588,6 +617,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_024_c);
 	   			
 	   	lbl_cl_022_c = new JLabel("");
+		lbl_cl_022_c.setName("aula022_c");
 	   	lbl_cl_022_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -606,6 +636,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_022_c);
 	   			
 	   	lbl_cl_021_c = new JLabel("");
+		lbl_cl_021_c.setName("aula021_c");
 	   	lbl_cl_021_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -624,6 +655,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_021_c);
 	   			
 	   	lbl_cl_020_c = new JLabel("");
+		lbl_cl_020_c.setName("aula020_c");
 	   	lbl_cl_020_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -642,6 +674,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_020_c);
 	   					
 	   	lbl_cl_019_c = new JLabel("");
+		lbl_cl_019_c.setName("aula019_c");
 	   	lbl_cl_019_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -660,6 +693,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_019_c);
 	   					
 	   	lbl_cl_007_c = new JLabel("");
+		lbl_cl_007_c.setName("aula007_c");
 	   	lbl_cl_007_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -678,6 +712,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_007_c);
 	   							
 	   	lbl_cl_009_c = new JLabel("");
+		lbl_cl_009_c.setName("aula009_c");
 	   	lbl_cl_009_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -696,6 +731,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_009_c);
 	   							
 	   	lbl_cl_011_c = new JLabel("");
+		lbl_cl_011_c.setName("aula011_c");
 	   	lbl_cl_011_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -714,6 +750,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_011_c);
 	   							
 	   	lbl_cl_012_c = new JLabel("");
+		lbl_cl_012_c.setName("aula012_c");
 	   	lbl_cl_012_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -732,6 +769,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_012_c);
 	   							
 	   	lbl_cl_014_c = new JLabel("");
+		lbl_cl_014_c.setName("aula014_c");
 	   	lbl_cl_014_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -750,6 +788,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_014_c);
 	   							
 	   	lbl_cl_016_c = new JLabel("");
+		lbl_cl_016_c.setName("aula016_c");
 	   	lbl_cl_016_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -768,6 +807,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_016_c);
 	   									
 	   	lbl_cl_017_c = new JLabel("");
+		lbl_cl_017_c.setName("aula017_c");
 	   	lbl_cl_017_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -786,6 +826,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_017_c);
 	   									
 	   	lbl_cl_015_c = new JLabel("");
+		lbl_cl_015_c.setName("aula015_c");
 	   	lbl_cl_015_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -804,6 +845,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_015_c);
 	   	
 	   	lbl_cl_026_c = new JLabel("");
+		lbl_cl_026_c.setName("aula026_c");
 	   	lbl_cl_026_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -822,6 +864,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_026_c);
 	   											
 	   	lbl_cl_013_c = new JLabel("");
+		lbl_cl_013_c.setName("aula013_c");
 	   	lbl_cl_013_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -841,6 +884,7 @@ public class principal implements ActionListener, MouseListener{
 	   	
 	   											
 	   	lbl_cl_010_c = new JLabel("");
+		lbl_cl_010_c.setName("aula010_c");
 	   	lbl_cl_010_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -859,6 +903,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_010_c);
 	   													
 	   	lbl_cl_008_c = new JLabel("");
+		lbl_cl_008_c.setName("aula008_c");
 	   	lbl_cl_008_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -877,6 +922,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_008_c);
 	   													
 	   	lbl_cl_006_c = new JLabel("");
+		lbl_cl_006_c.setName("aula006_c");
 	   	lbl_cl_006_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -895,6 +941,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_006_c);
 	   															
 	   	lbl_cl_001_c = new JLabel("");
+		lbl_cl_001_c.setName("aula001_c");
 	   	lbl_cl_001_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -913,6 +960,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_001_c);
 	   																	
 	   	lbl_cl_003_c = new JLabel("");
+		lbl_cl_003_c.setName("aula003_c");
 	   	lbl_cl_003_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -931,6 +979,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_003_c);
 	   																	
 	   	lbl_cl_002_c = new JLabel("");
+		lbl_cl_002_c.setName("aula002_c");
 	   	lbl_cl_002_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -949,6 +998,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_002_c);
 	   																			
 	   	lbl_cl_004_c = new JLabel("");
+		lbl_cl_004_c.setName("aula004_c");
 	   	lbl_cl_004_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -967,6 +1017,7 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_calefaccion_p0.add(lbl_cl_004_c);
 	   																			
 	   	lbl_cl_005_c = new JLabel("");
+		lbl_cl_005_c.setName("aula005_c");
 	   	lbl_cl_005_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1055,84 +1106,104 @@ public class principal implements ActionListener, MouseListener{
 		/*ALARMAS*/
 		
 		lbl_cl_120_a = new JLabel("");
+		lbl_cl_120_a.setName("aula120");
 		lbl_cl_120_a.setBounds(85, 272, 39, 13);
 		panel_alarmas_p1.add(lbl_cl_120_a);
 		
 		lbl_cl_116_a = new JLabel("");
+		lbl_cl_116_a.setName("aula116");
 		lbl_cl_116_a.setBounds(191, 197, 39, 13);
 		panel_alarmas_p1.add(lbl_cl_116_a);
 		
 	   	
 	   	lbl_cl_115_a = new JLabel("");
+		lbl_cl_115_a.setName("aula115");
 	   	lbl_cl_115_a.setBounds(147, 272, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_115_a);
 	   			
 	   	lbl_cl_114_a = new JLabel("");
+		lbl_cl_114_a.setName("aula114");
 	   	lbl_cl_114_a.setBounds(218, 272, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_114_a);
 	   			
 	   	lbl_cl_117_a = new JLabel("");
+		lbl_cl_117_a.setName("aula117");
 	   	lbl_cl_117_a.setBounds(283, 197, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_117_a);
 	   			
 	   	lbl_cl_113_a = new JLabel("");
+		lbl_cl_113_a.setName("aula113");
 	   	lbl_cl_113_a.setBounds(317, 272, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_113_a);
 	   					
 	   	lbl_cl_118_a = new JLabel("");
 	   	lbl_cl_118_a.setBounds(379, 197, 39, 13);
+		lbl_cl_118_a.setName("aula118");
 	   	panel_alarmas_p1.add(lbl_cl_118_a);
 	   					
 	   	lbl_cl_106_a = new JLabel("");
+		lbl_cl_106_a.setName("aula106");
 	   	lbl_cl_106_a.setBounds(423, 159, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_106_a);
 	   							
 	   	lbl_cl_108_a = new JLabel("");
+		lbl_cl_108_a.setName("aula108");
 	   	lbl_cl_108_a.setBounds(423, 113, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_108_a);
 	   							
 	   	lbl_cl_110_a = new JLabel("");
+		lbl_cl_110_a.setName("aula110");
 	   	lbl_cl_110_a.setBounds(423, 67, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_110_a);
 	   									
 	   	lbl_cl_112_a = new JLabel("");
+		lbl_cl_112_a.setName("aula112");
 	   	lbl_cl_112_a.setBounds(501, 28, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_112_a);
 	   									
 	   	lbl_cl_119_a = new JLabel("");
+		lbl_cl_119_a.setName("aula119");
 	   	lbl_cl_119_a.setBounds(109, 334, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_119_a);
 	   											
 	   	lbl_cl_111_a = new JLabel("");
+		lbl_cl_111_a.setName("aula111");
 	   	lbl_cl_111_a.setBounds(561, 77, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_111_a);
 	   	
 	   											
 	   	lbl_cl_109_a = new JLabel("");
+		lbl_cl_109_a.setName("aula109");
 	   	lbl_cl_109_a.setBounds(561, 100, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_109_a);
 	   													
 	   	lbl_cl_107_a = new JLabel("");
+		lbl_cl_107_a.setName("aula107");
 	   	lbl_cl_107_a.setBounds(561, 147, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_107_a);
 	   													
 	   	lbl_cl_105_a = new JLabel("");
+		lbl_cl_105_a.setName("aula105");
 	   	lbl_cl_105_a.setBounds(561, 170, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_105_a);
 	   															
 	   	lbl_cl_101_a = new JLabel("");
+		lbl_cl_101_a.setName("aula101");
 	   	lbl_cl_101_a.setBounds(423, 387, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_101_a);
 	   																	
 	   	lbl_cl_103_a = new JLabel("");
+		lbl_cl_103_a.setName("aula103");
 	   	lbl_cl_103_a.setBounds(423, 334, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_103_a);
 	   																	
 	   	lbl_cl_102_a = new JLabel("");
+		lbl_cl_102_a.setName("aula102");
 	   	lbl_cl_102_a.setBounds(423, 357, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_102_a);
 	   																			
 	   	lbl_cl_104_a = new JLabel("");
+		lbl_cl_104_a.setName("aula104");
 	   	lbl_cl_104_a.setBounds(423, 313, 39, 13);
 	   	panel_alarmas_p1.add(lbl_cl_104_a);
 	   	
@@ -1165,7 +1236,8 @@ public class principal implements ActionListener, MouseListener{
 	   	
 	   	/*CALEFACCION*/
 	   	
-	   	lbl_cl_101_c = new JLabel("");		
+	   	lbl_cl_101_c = new JLabel("");	
+		lbl_cl_101_c.setName("aula101_c");
 		lbl_cl_101_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1183,7 +1255,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_101_c.setBounds(423, 387, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_101_c);
 		
-		lbl_cl_102_c = new JLabel("");		
+		lbl_cl_102_c = new JLabel("");	
+		lbl_cl_102_c.setName("aula102_c");
 		lbl_cl_102_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1202,6 +1275,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p1.add(lbl_cl_102_c);
 		
 		lbl_cl_103_c = new JLabel("");		
+		lbl_cl_103_c.setName("aula103_c");
 		lbl_cl_103_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1219,7 +1293,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_103_c.setBounds(423, 325, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_103_c);
 		
-		lbl_cl_104_c = new JLabel("");		
+		lbl_cl_104_c = new JLabel("");	
+		lbl_cl_104_c.setName("aula104_c");
 		lbl_cl_104_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1237,7 +1312,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_104_c.setBounds(423, 300, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_104_c);
 		
-		lbl_cl_105_c = new JLabel("");		
+		lbl_cl_105_c = new JLabel("");	
+		lbl_cl_105_c.setName("aula105_c");
 		lbl_cl_105_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1255,7 +1331,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_105_c.setBounds(555, 170, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_105_c);
 		
-		lbl_cl_106_c = new JLabel("");		
+		lbl_cl_106_c = new JLabel("");	
+		lbl_cl_106_c.setName("aula106_c");
 		lbl_cl_106_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1274,6 +1351,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p1.add(lbl_cl_106_c);
 		
 		lbl_cl_107_c = new JLabel("");		
+		lbl_cl_107_c.setName("aula107_c");
 		lbl_cl_107_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1292,6 +1370,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p1.add(lbl_cl_107_c);
 		
 		lbl_cl_108_c = new JLabel("");		
+		lbl_cl_108_c.setName("aula108_c");
 		lbl_cl_108_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1310,6 +1389,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p1.add(lbl_cl_108_c);
 		
 		lbl_cl_109_c = new JLabel("");		
+		lbl_cl_109_c.setName("aula109_c");
 		lbl_cl_109_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1327,7 +1407,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_109_c.setBounds(555, 90, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_109_c);
 		
-		lbl_cl_110_c = new JLabel("");		
+		lbl_cl_110_c = new JLabel("");	
+		lbl_cl_110_c.setName("aula110_c");
 		lbl_cl_110_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1345,7 +1426,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_110_c.setBounds(450, 80, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_110_c);
 		
-		lbl_cl_111_c = new JLabel("");		
+		lbl_cl_111_c = new JLabel("");
+		lbl_cl_111_c.setName("aula111_c");
 		lbl_cl_111_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1363,7 +1445,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_111_c.setBounds(555, 60, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_111_c);
 		
-		lbl_cl_112_c = new JLabel("");		
+		lbl_cl_112_c = new JLabel("");
+		lbl_cl_112_c.setName("aula112_c");
 		lbl_cl_112_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1381,7 +1464,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_112_c.setBounds(450, 40, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_112_c);
 		
-		lbl_cl_113_c = new JLabel("");		
+		lbl_cl_113_c = new JLabel("");	
+		lbl_cl_113_c.setName("aula113_c");
 		lbl_cl_113_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1399,7 +1483,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_113_c.setBounds(350, 255, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_113_c);
 		
-		lbl_cl_114_c = new JLabel("");		
+		lbl_cl_114_c = new JLabel("");	
+		lbl_cl_114_c.setName("aula114_c");
 		lbl_cl_114_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1418,6 +1503,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p1.add(lbl_cl_114_c);
 		
 		lbl_cl_115_c = new JLabel("");		
+		lbl_cl_115_c.setName("aula115_c");
 		lbl_cl_115_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1436,6 +1522,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p1.add(lbl_cl_115_c);
 		
 		lbl_cl_116_c = new JLabel("");		
+		lbl_cl_116_c.setName("aula116_c");
 		lbl_cl_116_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1453,7 +1540,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_116_c.setBounds(190, 170, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_116_c);
 		
-		lbl_cl_117_c = new JLabel("");		
+		lbl_cl_117_c = new JLabel("");
+		lbl_cl_117_c.setName("aula117_c");
 		lbl_cl_117_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1472,6 +1560,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p1.add(lbl_cl_117_c);
 		
 		lbl_cl_118_c = new JLabel("");		
+		lbl_cl_118_c.setName("aula118_c");
 		lbl_cl_118_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1490,6 +1579,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p1.add(lbl_cl_118_c);
 		
 		lbl_cl_119_c = new JLabel("");		
+		lbl_cl_119_c.setName("aula119_c");
 		lbl_cl_119_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1507,7 +1597,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_119_c.setBounds(110, 330, 39, 25);
 		panel_calefaccion_p1.add(lbl_cl_119_c);
 		
-		lbl_cl_120_c = new JLabel("");		
+		lbl_cl_120_c = new JLabel("");
+		lbl_cl_120_c.setName("aula120_c");
 		lbl_cl_120_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1584,39 +1675,48 @@ public class principal implements ActionListener, MouseListener{
 			/*ALARMAS*/
 		
 		lbl_cl_220_a = new JLabel("");
+		lbl_cl_220_a.setName("aula220");
 		lbl_cl_220_a.setBounds(55, 172, 39, 13);
 		panel_alarmas_p2.add(lbl_cl_220_a);
 		
 		lbl_cl_216_a = new JLabel("");
+		lbl_cl_216_a.setName("aula216");
 		lbl_cl_216_a.setBounds(330, 285, 39, 13);
 		panel_alarmas_p2.add(lbl_cl_216_a);
 		
 	   	
 	   	lbl_cl_215_a = new JLabel("");
+		lbl_cl_215_a.setName("aula215");
 	   	lbl_cl_215_a.setBounds(330, 180, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_215_a);
 	   			
 	   	lbl_cl_214_a = new JLabel("");
+		lbl_cl_214_a.setName("aula214");
 	   	lbl_cl_214_a.setBounds(480, 35, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_214_a);
 	   			
 	   	lbl_cl_217_a = new JLabel("");
+		lbl_cl_217_a.setName("aula217");
 	   	lbl_cl_217_a.setBounds(190, 285, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_217_a);
 	   			
 	   	lbl_cl_213_a = new JLabel("");
+		lbl_cl_213_a.setName("aula213");
 	   	lbl_cl_213_a.setBounds(420, 70, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_213_a);
 	   					
 	   	lbl_cl_218_a = new JLabel("");
+		lbl_cl_218_a.setName("aula218");
 	   	lbl_cl_218_a.setBounds(150, 285, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_218_a);
 	   					
 	   	lbl_cl_206_a = new JLabel("");
+		lbl_cl_206_a.setName("aula206");
 	   	lbl_cl_206_a.setBounds(540, 320, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_206_a);
 	   							
 	   	lbl_cl_208_a = new JLabel("");
+		lbl_cl_208_a.setName("aula208");
 	   	lbl_cl_208_a.setBounds(560, 185, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_208_a);
 	   							
@@ -1625,43 +1725,53 @@ public class principal implements ActionListener, MouseListener{
 	   	panel_alarmas_p2.add(lbl_cl_210_a);
 	   									
 	   	lbl_cl_212_a = new JLabel("");
+		lbl_cl_212_a.setName("aula212");
 	   	lbl_cl_212_a.setBounds(560, 90, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_212_a);
 	   									
 	   	lbl_cl_219_a = new JLabel("");
+		lbl_cl_219_a.setName("aula219");
 	   	lbl_cl_219_a.setBounds(109, 334, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_219_a);
 	   											
 	   	lbl_cl_211_a = new JLabel("");
+		lbl_cl_211_a.setName("aula211");
 	   	lbl_cl_211_a.setBounds(420, 120, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_211_a);
 	   	
 	   											
 	   	lbl_cl_209_a = new JLabel("");
+		lbl_cl_209_a.setName("aula209");
 	   	lbl_cl_209_a.setBounds(420, 160, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_209_a);
 	   													
 	   	lbl_cl_207_a = new JLabel("");
+		lbl_cl_207_a.setName("aula207");
 	   	lbl_cl_207_a.setBounds(540, 290, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_207_a);
 	   													
 	   	lbl_cl_205_a = new JLabel("");
+		lbl_cl_205_a.setName("aula205");
 	   	lbl_cl_205_a.setBounds(423, 320, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_205_a);
 	   															
 	   	lbl_cl_201_a = new JLabel("");
+		lbl_cl_201_a.setName("aula201");
 	   	lbl_cl_201_a.setBounds(423, 387, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_201_a);
 	   																	
 	   	lbl_cl_203_a = new JLabel("");
+		lbl_cl_203_a.setName("aula203");
 	   	lbl_cl_203_a.setBounds(530, 385, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_203_a);
 	   																	
 	   	lbl_cl_202_a = new JLabel("");
+		lbl_cl_202_a.setName("aula202");
 	   	lbl_cl_202_a.setBounds(490, 400, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_202_a);
 	   																			
 	   	lbl_cl_204_a = new JLabel("");
+		lbl_cl_204_a.setName("aula204");
 	   	lbl_cl_204_a.setBounds(540, 350, 39, 13);
 	   	panel_alarmas_p2.add(lbl_cl_204_a);
 	   	
@@ -1722,9 +1832,11 @@ public class principal implements ActionListener, MouseListener{
 			}
 		});
 		lbl_cl_202_c.setBounds(490, 380, 39, 25);
+		lbl_cl_202_c.setName("aula202_c");
 		panel_calefaccion_p2.add(lbl_cl_202_c);
 		
 		lbl_cl_203_c = new JLabel("");		
+		lbl_cl_203_c.setName("aula203_c");
 		lbl_cl_203_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1742,7 +1854,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_203_c.setBounds(530, 380, 39, 25);
 		panel_calefaccion_p2.add(lbl_cl_203_c);
 		
-		lbl_cl_204_c = new JLabel("");		
+		lbl_cl_204_c = new JLabel("");	
+		lbl_cl_204_c.setName("aula204_c");
 		lbl_cl_204_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1760,7 +1873,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_204_c.setBounds(560, 340, 39, 25);
 		panel_calefaccion_p2.add(lbl_cl_204_c);
 		
-		lbl_cl_205_c = new JLabel("");		
+		lbl_cl_205_c = new JLabel("");
+		lbl_cl_205_c.setName("aula205_c");
 		lbl_cl_205_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1778,7 +1892,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_205_c.setBounds(423, 320, 39, 25);
 		panel_calefaccion_p2.add(lbl_cl_205_c);
 		
-		lbl_cl_206_c = new JLabel("");		
+		lbl_cl_206_c = new JLabel("");	
+		lbl_cl_206_c.setName("aula206_c");
 		lbl_cl_206_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1796,7 +1911,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_206_c.setBounds(560, 310, 39, 25);
 		panel_calefaccion_p2.add(lbl_cl_206_c);
 		
-		lbl_cl_207_c = new JLabel("");		
+		lbl_cl_207_c = new JLabel("");
+		lbl_cl_207_c.setName("aula207_c");
 		lbl_cl_207_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1815,6 +1931,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_207_c);
 		
 		lbl_cl_208_c = new JLabel("");		
+		lbl_cl_208_c.setName("aula208_c");
 		lbl_cl_208_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1833,6 +1950,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_208_c);
 		
 		lbl_cl_209_c = new JLabel("");		
+		lbl_cl_209_c.setName("aula209_c");
 		lbl_cl_209_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1850,7 +1968,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_209_c.setBounds(420, 160, 39, 25);
 		panel_calefaccion_p2.add(lbl_cl_209_c);
 		
-		lbl_cl_210_c = new JLabel("");		
+		lbl_cl_210_c = new JLabel("");	
+		lbl_cl_210_c.setName("aula210_c");
 		lbl_cl_210_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1869,6 +1988,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_210_c);
 		
 		lbl_cl_211_c = new JLabel("");		
+		lbl_cl_211_c.setName("aula211_c");
 		lbl_cl_211_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1887,6 +2007,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_211_c);
 		
 		lbl_cl_212_c = new JLabel("");		
+		lbl_cl_212_c.setName("aula212_c");
 		lbl_cl_212_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1905,6 +2026,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_212_c);
 		
 		lbl_cl_213_c = new JLabel("");		
+		lbl_cl_213_c.setName("aula213_c");
 		lbl_cl_213_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1923,6 +2045,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_213_c);
 		
 		lbl_cl_214_c = new JLabel("");		
+		lbl_cl_214_c.setName("aula214_c");
 		lbl_cl_214_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1940,7 +2063,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_214_c.setBounds(480, 35, 39, 25);
 		panel_calefaccion_p2.add(lbl_cl_214_c);
 		
-		lbl_cl_215_c = new JLabel("");		
+		lbl_cl_215_c = new JLabel("");	
+		lbl_cl_215_c.setName("aula215_c");
 		lbl_cl_215_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1959,6 +2083,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_215_c);
 		
 		lbl_cl_216_c = new JLabel("");		
+		lbl_cl_216_c.setName("aula216_c");
 		lbl_cl_216_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1976,7 +2101,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_216_c.setBounds(330, 285, 39, 25);
 		panel_calefaccion_p2.add(lbl_cl_216_c);
 		
-		lbl_cl_217_c = new JLabel("");		
+		lbl_cl_217_c = new JLabel("");	
+		lbl_cl_217_c.setName("aula217_c");
 		lbl_cl_217_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -1995,6 +2121,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_217_c);
 		
 		lbl_cl_218_c = new JLabel("");		
+		lbl_cl_218_c.setName("aula218_c");
 		lbl_cl_218_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -2012,7 +2139,8 @@ public class principal implements ActionListener, MouseListener{
 		lbl_cl_218_c.setBounds(150, 285, 39, 25);
 		panel_calefaccion_p2.add(lbl_cl_218_c);
 		
-		lbl_cl_219_c = new JLabel("");		
+		lbl_cl_219_c = new JLabel("");	
+		lbl_cl_219_c.setName("aula219_c");
 		lbl_cl_219_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -2031,6 +2159,7 @@ public class principal implements ActionListener, MouseListener{
 		panel_calefaccion_p2.add(lbl_cl_219_c);
 		
 		lbl_cl_220_c = new JLabel("");		
+		lbl_cl_220_c.setName("aula220_c");
 		lbl_cl_220_c.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -2182,8 +2311,9 @@ public class principal implements ActionListener, MouseListener{
 	}
 	
 	private void mostrar_alarmas() {
+		
 		lblAlarmaCalefaccion.setText("ALARMAS");
-
+		
 		if(cont_piso==0) {
 			panel_alarmas_p0.setVisible(true);
 			panel_calefaccion_p0.setVisible(false);
@@ -2214,8 +2344,10 @@ public class principal implements ActionListener, MouseListener{
 	}
 	
 	private void mostrar_calefaccion() {
+		
 		lblAlarmaCalefaccion.setText("CALEFACCION");
-
+		
+		
 		if(cont_piso==0) {
 			panel_alarmas_p0.setVisible(false);
 			panel_calefaccion_p0.setVisible(true);
@@ -2249,4 +2381,5 @@ public class principal implements ActionListener, MouseListener{
 		// TODO Auto-generated method stub
 		lbl_piso.setText("Piso "+cont_piso);
 	}
+	
 }
